@@ -456,42 +456,6 @@ button, input, textarea, select {
   border-bottom-color: var(--border-accent);
 }
 
-@media (min-width: 1025px) {
-  .about-page .annapoorna-header .nav-container {
-    height: 76px !important;
-    min-height: 0 !important;
-    padding-block: 0 !important;
-  }
-
-  .about-page .annapoorna-header .brand-logo img {
-    height: 48px !important;
-  }
-
-  .about-page .annapoorna-header .desktop-nav {
-    gap: 1.65rem !important;
-  }
-
-  .about-page .annapoorna-header .nav-link {
-    font-size: 0.9rem !important;
-  }
-
-  .about-page .annapoorna-header .header-actions {
-    gap: 0.7rem !important;
-  }
-
-  .about-page .annapoorna-header .control-btn {
-    width: 38px !important;
-    height: 38px !important;
-    flex-basis: 38px !important;
-  }
-
-  .about-page .annapoorna-header .nav-reservation-cta {
-    height: 48px !important;
-    padding: 0 1.6rem !important;
-    font-size: 0.9rem !important;
-  }
-}
-
 .top-bar-notice {
   background-color: var(--color-forest-dark);
   color: var(--text-light);
@@ -621,7 +585,9 @@ button, input, textarea, select {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 240px;
+  width: max-content;
+  min-width: 280px;
+  max-width: min(360px, calc(100vw - 2rem));
   background-color: var(--bg-surface);
   border: 1px solid var(--border-light);
   border-top: 3px solid var(--color-gold);
@@ -645,6 +611,7 @@ button, input, textarea, select {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  white-space: nowrap;
   padding: 0.65rem 1.25rem;
   font-family: var(--font-nav);
   font-size: 0.9rem;
