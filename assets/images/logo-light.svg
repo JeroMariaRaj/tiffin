@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" fill="none">
+  <!-- Traditional Vilakku / Diya Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Base Plate -->
+    <path d="M15 52 C25 56 35 56 45 52 L43 56 C33 59 27 59 17 56 Z" fill="#D48B12" />
+    <path d="M18 48 C24 50 36 50 42 48 L44 51 C36 54 24 54 16 51 Z" fill="#E9A825" />
+    <!-- Stand -->
+    <path d="M28 35 L32 35 L33 48 L27 48 Z" fill="#E28456" />
+    <circle cx="30" cy="34" r="4" fill="#F4C45D" />
+    <!-- Diya Bowl -->
+    <path d="M12 28 C12 36 48 36 48 28 C45 27 15 27 12 28 Z" fill="#E9A825" />
+    <ellipse cx="30" cy="27" rx="17" ry="4" fill="#D48B12" />
+    <ellipse cx="30" cy="26" rx="14" ry="2.5" fill="#FFF4D0" opacity="0.8" />
+    <!-- Flame -->
+    <path d="M30 6 C25 15 23 20 25 24 C27 27 33 27 35 24 C37 20 35 15 30 6 Z" fill="url(#flameGradDark)" />
+    <path d="M30 12 C28 17 27 20 28 22 C29 24 31 24 32 22 C33 20 32 17 30 12 Z" fill="#FFFFFF" />
+    <!-- Radiance / Sparkle -->
+    <circle cx="30" cy="18" r="14" fill="#E9A825" opacity="0.3" />
+  </g>
+
+  <!-- Typography: TASTE OF SOUTH -->
+  <g transform="translate(75, 18)">
+    <text x="0" y="26" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="25" font-weight="700" letter-spacing="2" fill="#FDFBF7">
+      TASTE OF SOUTH
+    </text>
+    <text x="2" y="44" font-family="'Outfit', sans-serif" font-size="8.5" font-weight="600" letter-spacing="3.8" fill="#E9A825">
+      AUTHENTIC SOUTH INDIAN KITCHEN
+    </text>
+  </g>
+
+  <defs>
+    <linearGradient id="flameGradDark" x1="30" y1="6" x2="30" y2="27" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFF8B6" />
+      <stop offset="40%" stop-color="#FFAA2B" />
+      <stop offset="100%" stop-color="#E28456" />
+    </linearGradient>
+  </defs>
+</svg>

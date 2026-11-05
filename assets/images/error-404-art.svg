@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="260" viewBox="0 0 360 260" fill="none">
+  <!-- Decorative Plate / Banana leaf platter -->
+  <ellipse cx="180" cy="180" rx="140" ry="45" fill="#EBE1D0" opacity="0.6"/>
+  <ellipse cx="180" cy="176" rx="125" ry="38" fill="#1B4332" opacity="0.15"/>
+  <path d="M70 170 C90 145 150 140 290 165 C280 195 210 205 70 170 Z" fill="#2D6A4F" opacity="0.4"/>
+  <!-- Empty Steel Tiffin Box Stack with open lid -->
+  <g transform="translate(130, 70)">
+    <!-- Bottom Carrier -->
+    <rect x="15" y="65" width="70" height="30" rx="6" fill="#D8D4CE" stroke="#7A756D" stroke-width="2"/>
+    <line x1="20" y1="80" x2="80" y2="80" stroke="#FAF6EE" stroke-width="2" opacity="0.7"/>
+    <!-- Middle Carrier -->
+    <rect x="15" y="35" width="70" height="28" rx="6" fill="#E5E2DC" stroke="#7A756D" stroke-width="2"/>
+    <line x1="20" y1="49" x2="80" y2="49" stroke="#FAF6EE" stroke-width="2" opacity="0.7"/>
+    <!-- Top Carrier -->
+    <rect x="15" y="5" width="70" height="28" rx="6" fill="#F3F0EA" stroke="#7A756D" stroke-width="2"/>
+    <!-- Handle -->
+    <path d="M8 85 L8 0 C8 -10 92 -10 92 0 L92 85" fill="none" stroke="#5C574F" stroke-width="3" stroke-linecap="round"/>
+    <rect x="42" y="-14" width="16" height="6" rx="2" fill="#E9A825"/>
+  </g>
+  <!-- Question marks / Floating Curry Leaves -->
+  <g transform="translate(60, 40)">
+    <text x="0" y="40" font-family="'Cormorant Garamond', serif" font-size="48" font-weight="700" fill="#C85A32" opacity="0.7">?</text>
+  </g>
+  <g transform="translate(270, 50)">
+    <text x="0" y="40" font-family="'Cormorant Garamond', serif" font-size="36" font-weight="700" fill="#E9A825" opacity="0.8">?</text>
+  </g>
+  <!-- Crumb / Chutney drop -->
+  <ellipse cx="230" cy="180" rx="8" ry="4" fill="#C85A32" opacity="0.5"/>
+  <ellipse cx="110" cy="175" rx="10" ry="5" fill="#E9A825" opacity="0.5"/>
+</svg>

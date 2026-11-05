@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – Our Heritage, Philosophy & Masters | Taste of South</title>
+  <meta name="description" content="Discover the 56-year heritage of Taste of South South Indian Kitchen. From a 6-table tiffin shop in 1968 Mylapore to an iconic culinary institution.">
+  <meta name="keywords" content="Taste of South Heritage, South Indian History, Traditional Cooking, Mylapore Restaurant Story">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <style>
+    /* Heritage Timeline Styles */
+    .heritage-timeline {
+      position: relative;
+      max-width: 900px;
+      margin-inline: auto;
+      padding-block: 2rem;
+    }
+    .heritage-timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: linear-gradient(180deg, var(--color-gold), var(--color-terracotta), var(--color-gold));
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3.5rem;
+      width: 50%;
+      padding-right: 3rem;
+    }
+    .timeline-item:nth-child(even) {
+      margin-left: auto;
+      padding-right: 0;
+      padding-left: 3rem;
+    }
+    .timeline-dot {
+      position: absolute;
+      top: 10px;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--color-gold);
+      border: 4px solid var(--bg-surface);
+      box-shadow: 0 0 10px rgba(233, 168, 37, 0.5);
+      z-index: 2;
+    }
+    .timeline-item:nth-child(even) .timeline-dot {
+      right: auto;
+      left: -10px;
+    }
+    .timeline-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 1.8rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-normal);
+    }
+    .timeline-card:hover {
+      border-color: var(--color-gold);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .timeline-year {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-terracotta);
+      margin-bottom: 0.25rem;
+    }
+
+    @media (max-width: 768px) {
+      .heritage-timeline::before {
+        left: 20px;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 3.5rem;
+      }
+      .timeline-item:nth-child(even) {
+        padding-left: 3.5rem;
+      }
+      .timeline-dot {
+        left: 10px !important;
+        right: auto !important;
+      }
+    }
+  </style>
+</head>
+<body class="about-page">
+
+    <!-- Header -->
+  <header class="annapoorna-header">
+    <div class="annapoorna-container">
+      <div class="nav-container">
+        <a href="index.html" class="brand-logo" aria-label="Taste of South Home">
+          <img src="assets/images/logo.svg" alt="Taste of South - South Indian Kitchen" class="logo-light-mode">
+          <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" class="logo-dark-mode">
+        </a>
+
+        <nav class="desktop-nav">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="index.html" class="dropdown-link">Home 1 – Traditional Landing</a>
+              <a href="home-2.html" class="dropdown-link">Home 2 – Modern Dining</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="about.html" class="nav-link active">About Us</a></div>
+          <div class="nav-item"><a href="menu.html" class="nav-link">Menu</a></div>
+          <div class="nav-item">
+            <a href="services.html" class="nav-link">
+              Services
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="services.html" class="dropdown-link">All Services Overview</a>
+              <a href="service-restaurant-dining.html" class="dropdown-link">1. Restaurant Dining</a>
+              <a href="service-breakfast-specials.html" class="dropdown-link">2. Breakfast Specials</a>
+              <a href="service-corporate-catering.html" class="dropdown-link">3. Corporate Catering</a>
+              <a href="service-wedding-catering.html" class="dropdown-link">4. Wedding Catering</a>
+              <a href="service-family-dining.html" class="dropdown-link">5. Family Dining</a>
+              <a href="service-takeaway-services.html" class="dropdown-link">6. Takeaway Services</a>
+              <a href="service-special-orders.html" class="dropdown-link">7. Special Food Orders</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="blog.html" class="nav-link">
+              Blog
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="blog.html" class="dropdown-link">All Articles</a>
+              <a href="blog-crispy-dosa-secrets.html" class="dropdown-link">Secrets of Crispy Dosa</a>
+              <a href="blog-filter-coffee-culture.html" class="dropdown-link">Filter Coffee Culture</a>
+              <a href="blog-health-benefits-idli.html" class="dropdown-link">Health Benefits of Idli</a>
+              <a href="blog-traditional-cooking-methods.html" class="dropdown-link">Soapstone Cooking Methods</a>
+              <a href="blog-fresh-spices-western-ghats.html" class="dropdown-link">Western Ghats Spices</a>
+              <a href="blog-breakfast-recipes-tradition.html" class="dropdown-link">Timeless Breakfast Rituals</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></div>
+          <div class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></div>
+        </nav>
+
+        <div class="header-actions">
+          <button id="themeToggleBtn" class="control-btn" aria-label="Toggle Theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+          <button id="rtlToggleBtn" class="control-btn" aria-label="Toggle RTL">RTL</button>
+          <button class="btn-annapoorna btn-primary-gold open-reservation-modal nav-reservation-cta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Book a Table</button>
+          <button class="mobile-menu-toggle" aria-label="Open Mobile Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/logo.svg" alt="Taste of South" style="height: 42px;">
+      <button class="mobile-drawer-close" style="background:none; border:none; font-size:1.8rem; cursor:pointer;">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home 1 – Traditional</a></li>
+      <li class="mobile-nav-item"><a href="home-2.html" class="mobile-nav-link">Home 2 – Modern Dining</a></li>
+      <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li class="mobile-nav-item"><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+      <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li class="mobile-nav-item"><a href="pricing.html" class="mobile-nav-link">Pricing Packages</a></li>
+      <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+      <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <button class="btn-annapoorna btn-primary-gold open-reservation-modal w-100 mt-auto">Book a Table</button>
+  </aside>
+
+  <!-- ========================================================================
+       PAGE BANNER
+       ======================================================================== -->
+  <div class="page-banner">
+    <div class="page-banner-bg" style="background-image: url('assets/images/Traditional Restaurant Dining.jpg');"></div>
+    <div class="page-banner-content">
+      <h1>Our History, Heritage & Soul</h1>
+      <p class="page-banner-subtitle">Preserving 56 years of sacred South Indian culinary craftsmanship.</p>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SECTION 1: About Our Restaurant & Origins
+       ======================================================================== -->
+  <section class="section-spacing bg-surface">
+    <div class="annapoorna-container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-badge badge-gold">The Genesis</span>
+          <h2>A Small Copper Vessel & An Unyielding Faith</h2>
+          <div class="section-divider" style="justify-content: flex-start;">
+            <div class="line"></div>
+            <div class="flower-dot"></div>
+            <div class="line reverse"></div>
+          </div>
+          <p class="lead" style="color:var(--text-main); font-weight:500;">
+            In October 1968, late Shri Krishnamurthy Iyer lit the first brass lamp at a humble six-table tiffin parlor under the shadow of the Mylapore Kapaleeshwarar temple.
+          </p>
+          <p>
+            He brought with him no financial riches, but three sacred things: an heirloom brass coffee decoction filter handed down from his grandmother, seasoned black stone wet grinders from Thanjavur, and an unshakeable belief that <em>"Annadhanam"</em>—the sharing of pure, lovingly prepared nourishment—is the highest form of worship.
+          </p>
+          <p>
+            Today, over five decades later, the morning queue outside our doors still begins before sunrise. The world has changed; our stone grinding cycles, single-origin spices, and open-hearted smiles have not.
+          </p>
+          <div style="display:flex; gap:2rem; margin-top:2rem;">
+            <div>
+              <div style="font-family:var(--font-heading); font-size:2.8rem; font-weight:700; color:var(--color-terracotta);">1968</div>
+              <div style="font-family:var(--font-nav); font-size:0.85rem; color:var(--text-muted); text-transform:uppercase;">Foundation Year</div>
+            </div>
+            <div style="border-left:1px solid var(--border-light); padding-left:2rem;">
+              <div style="font-family:var(--font-heading); font-size:2.8rem; font-weight:700; color:var(--color-forest);">4th</div>
+              <div style="font-family:var(--font-nav); font-size:0.85rem; color:var(--text-muted); text-transform:uppercase;">Generation of Cooks</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div style="position:relative;">
+            <img src="assets/images/Traditional Cooking Methods Soapstone & Cast Iron.jpg" alt="Heirloom Cooking at Taste of South" style="width:100%; height:480px; object-fit:cover; border-radius:var(--radius-lg); border:3px solid var(--color-beige-dark); box-shadow:var(--shadow-lg);">
+            <div style="position:absolute; bottom:-25px; left:-25px; background:var(--color-forest-dark); color:var(--text-light); padding:1.5rem; border-radius:var(--radius-md); border:2px solid var(--color-gold); max-width:260px; box-shadow:var(--shadow-lg);">
+              <div style="font-family:var(--font-accent); font-style:italic; font-size:0.95rem; color:var(--color-gold-light); margin-bottom:0.25rem;">"Food is God."</div>
+              <div style="font-family:var(--font-nav); font-size:0.75rem; color:rgba(250,246,238,0.75);">Founder Shri Krishnamurthy Iyer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: History & Heritage Timeline
+       ======================================================================== -->
+  <section class="section-spacing bg-surface-secondary">
+    <div class="annapoorna-container">
+      <div class="section-header">
+        <span class="section-badge badge-gold">Milestones</span>
+        <h2 class="section-title">A Journey Through Half A Century</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+        <p class="section-subtitle">Key chapters in our five-decade dedication to authentic Southern hospitality.</p>
+      </div>
+
+      <div class="heritage-timeline">
+        <!-- 1968 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">1968</div>
+            <h4>The First Lamp in Mylapore</h4>
+            <p>Shri Krishnamurthy Iyer inaugurates a humble 6-table shop offering hot idli, medu vada, and filter coffee brewed with freshly ground Chicory beans.</p>
+          </div>
+        </div>
+
+        <!-- 1982 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">1982</div>
+            <h4>The Seasoned Cast-Iron Era</h4>
+            <p>Introduction of the 4-foot seasoned heavy iron tawa, pioneering the famous paper-thin Ghee Roast Dosa that drew food pilgrims from across Tamil Nadu.</p>
+          </div>
+        </div>
+
+        <!-- 1999 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">1999</div>
+            <h4>Traditional Kalyana Sapadu Catering</h4>
+            <p>Launched our dedicated wedding feast division, bringing 32-course authentic banana leaf feasts to high-profile traditional weddings.</p>
+          </div>
+        </div>
+
+        <!-- 2014 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2014</div>
+            <h4>Direct Western Ghats Farming Co-ops</h4>
+            <p>Formed direct procurement partnerships with smallholder spice farmers in Idukki, Salem, and Guntur, guaranteeing unadulterated spices.</p>
+          </div>
+        </div>
+
+        <!-- Present -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2026</div>
+            <h4>Contemporary Gastronomy & Global Acclaim</h4>
+            <p>Unveiling Taste of South Atelier — celebrating modern culinary presentation without relinquishing a single nuance of our sacred wet-stone fermentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 3: Our Food Philosophy
+       ======================================================================== -->
+  <section class="section-spacing bg-surface">
+    <div class="annapoorna-container">
+      <div class="section-header">
+        <span class="section-badge">Principles</span>
+        <h2 class="section-title">The Four Pillars of Our Philosophy</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h4>Natural Fermentation</h4>
+          <p>Zero chemical yeasts. Natural air-borne lactobacillus fermentation for exactly 14 hours in stone urns.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4>Pure A2 Desi Cow Ghee</h4>
+          <p>Sourced exclusively from indigenous cow breeds, churned via traditional wooden bilona methods.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+          </div>
+          <h4>Soapstone & Iron Cooking</h4>
+          <p>We cook our sambars, rasams, and vatha kuzhambu only in natural soapstone kalchattis for alkaline balance.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4>Satvik Integrity</h4>
+          <p>Clean, calming, nourishing food that leaves the body light, energized, and deeply peaceful.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4: Master Chefs & Kitchen Team
+       ======================================================================== -->
+  <section class="section-spacing bg-surface-secondary">
+    <div class="annapoorna-container">
+      <div class="section-header">
+        <span class="section-badge badge-gold">The Masters</span>
+        <h2 class="section-title">Guardians of the Hearth</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+        <p class="section-subtitle">Meet the veterans whose seasoned hands craft every roast, batter, and decoction.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Master 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="food-card" style="text-align:center;">
+            <div class="food-card-thumb chef-portrait-thumb" style="height:320px;">
+              <img src="assets/images/Chef Sadasivam.jpg" alt="Master Chef Sadasivam">
+            </div>
+            <div class="food-card-body">
+              <h3 style="font-size:1.6rem; margin-bottom:0.25rem;">Chef Sadasivam</h3>
+              <span style="font-family:var(--font-nav); color:var(--color-terracotta); font-weight:600; font-size:0.85rem; text-transform:uppercase; margin-bottom:0.75rem; display:block;">Executive Culinary Director</span>
+              <p class="page-banner-subtitle">Over 38 years preserving temple recipes, supervising spice roasting, and mentoring the younger generation of Southern cooks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="food-card" style="text-align:center;">
+            <div class="food-card-thumb chef-portrait-thumb" style="height:320px;">
+              <img src="assets/images/Natarajan Iyer.jpg" alt="Master Natarajan">
+            </div>
+            <div class="food-card-body">
+              <h3 style="font-size:1.6rem; margin-bottom:0.25rem;">Natarajan Iyer</h3>
+              <span style="font-family:var(--font-nav); color:var(--color-terracotta); font-weight:600; font-size:0.85rem; text-transform:uppercase; margin-bottom:0.75rem; display:block;">Chief Dosa & Tawa Master</span>
+              <p style="font-size:0.92rem; margin-bottom:0;">42 years command over our seasoned cast iron tawas. Can calibrate tawa temperature simply by the sound of water droplets.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="food-card" style="text-align:center;">
+            <div class="food-card-thumb chef-portrait-thumb" style="height:320px;">
+              <img src="assets/images/Chellappa Swamy.jpg" alt="Master Chellappa">
+            </div>
+            <div class="food-card-body">
+              <h3 style="font-size:1.6rem; margin-bottom:0.25rem;">Chellappa Swamy</h3>
+              <span style="font-family:var(--font-nav); color:var(--color-terracotta); font-weight:600; font-size:0.85rem; text-transform:uppercase; margin-bottom:0.75rem; display:block;">Master Degree Coffee Sommelier</span>
+              <p style="font-size:0.92rem; margin-bottom:0;">Has poured an estimated 1.4 million brass tumblers of Kumbakonam degree filter coffee with legendary 3-foot froth arcs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5: Experience Our Tradition CTA
+       ======================================================================== -->
+  <section class="section-spacing bg-forest text-center">
+    <div class="annapoorna-container" style="max-width:760px;">
+      <span class="section-badge badge-gold" style="background:rgba(233,168,37,0.2); color:#fff; border-color:var(--color-gold);">Taste The Tradition</span>
+      <h2 style="color:#FFFFFF; margin-block:1rem 1.25rem;">Step In and Be Part of Our Story</h2>
+      <p style="color:rgba(250,246,238,0.85); font-size:1.15rem; margin-bottom:2.25rem;">
+        Whether you come for a crisp morning ghee roast and hot tumbler of degree coffee, or celebrate a milestone with our full banana leaf feast, we welcome you as family.
+      </p>
+      <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+        <a href="menu.html" class="btn-annapoorna btn-primary-gold btn-lg">Explore Menu</a>
+        <button class="btn-annapoorna btn-outline-gold btn-lg open-reservation-modal">Book A Table</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ SECTION: Heritage, Vessels & Culinary Philosophy
+       ======================================================================== -->
+  <section class="section-spacing bg-surface-secondary">
+    <div class="annapoorna-container" style="max-width: 860px;">
+      <div class="section-header">
+        <span class="section-badge badge-gold">Heritage & Roots</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+        <p class="section-subtitle">Discover the heritage, traditional cookware, and timeless principles behind our 58-year journey.</p>
+      </div>
+
+      <div class="accordion" id="aboutFaqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAbout1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbout1" aria-expanded="true" aria-controls="collapseAbout1">
+              When was Taste of South founded and what is its founding story?
+            </button>
+          </h2>
+          <div id="collapseAbout1" class="accordion-collapse collapse show" aria-labelledby="headingAbout1" data-bs-parent="#aboutFaqAccordion">
+            <div class="accordion-body">
+              Taste of South was established in October 1968 by late Shri Krishnamurthy Iyer near the sacred Kapaleeshwarar Temple tank in Mylapore. Beginning with just six wooden tables and a single copper vessel, our founder’s vow was simple: serve food with the same devotion, purity, and sacred warmth as offered in a traditional home kitchen.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAbout2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbout2" aria-expanded="false" aria-controls="collapseAbout2">
+              Why do your chefs insist on cooking in Kalchatti soapstone pots and heavy iron tawas?
+            </button>
+          </h2>
+          <div id="collapseAbout2" class="accordion-collapse collapse" aria-labelledby="headingAbout2" data-bs-parent="#aboutFaqAccordion">
+            <div class="accordion-body">
+              Hand-carved Kalchatti soapstone vessels retain steady, gentle alkaline heat that prevents delicate spice oils from scorching, naturally balancing the acidity in our Vathal Kuzhambu and Rasam. Meanwhile, our 40-year seasoned heavy cast iron tawas deliver the incomparable golden, honeycomb crust unique to authentic Tamil dosas.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAbout3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbout3" aria-expanded="false" aria-controls="collapseAbout3">
+              Where do you source your heirloom spices and kitchen ingredients?
+            </button>
+          </h2>
+          <div id="collapseAbout3" class="accordion-collapse collapse" aria-labelledby="headingAbout3" data-bs-parent="#aboutFaqAccordion">
+            <div class="accordion-body">
+              We bypass commercial wholesale brokers to work directly with ancestral farming estates across South India: Tellicherry bold black pepper from the misty slopes of Wayanad, GI-tagged turmeric roots from Salem, green cardamom from Idukki, cold-pressed sesame oil from Chettinad, and unpolished Gundu chillies from Ramanathapuram.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAbout4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbout4" aria-expanded="false" aria-controls="collapseAbout4">
+              How have you maintained recipe consistency over half a century?
+            </button>
+          </h2>
+          <div id="collapseAbout4" class="accordion-collapse collapse" aria-labelledby="headingAbout4" data-bs-parent="#aboutFaqAccordion">
+            <div class="accordion-body">
+              We follow the handwritten culinary notebooks left by our founding master cooks. Every masala powder is roasted and pounded in-house weekly in measured small batches. Senior chefs apprentice for five years in our kitchen before being permitted to head the master sambar and ghee roast stations.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAbout5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbout5" aria-expanded="false" aria-controls="collapseAbout5">
+              Can guests book culinary heritage tours or kitchen visits?
+            </button>
+          </h2>
+          <div id="collapseAbout5" class="accordion-collapse collapse" aria-labelledby="headingAbout5" data-bs-parent="#aboutFaqAccordion">
+            <div class="accordion-body">
+              Yes! For culinary scholars, travelers, and food enthusiasts, we organize brief guided morning tours of our stone-grinding chambers and Kalchatti cooking section on Tuesday and Thursday mornings (9:30 AM – 10:15 AM). Advance inquiry through our contact desk is required.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+      <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="annapoorna-footer">
+    <div class="annapoorna-container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom:1.25rem;">
+            <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" style="height:54px;">
+          </a>
+          <p style="font-size:0.92rem; line-height:1.7; margin-bottom:1.5rem;">
+            Preserving South India's golden heritage since 1968. Authentic stone-ground tiffin, hand-crafted degree filter coffee, and traditional wedding feasts.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation & Explore (Exact Navbar Names) -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1 – Traditional</a></li>
+            <li><a href="home-2.html">Home 2 – Modern Dining</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (5 Core Offerings) -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-restaurant-dining.html">Restaurant Dining</a></li>
+            <li><a href="service-breakfast-specials.html">Breakfast Specials</a></li>
+            <li><a href="service-corporate-catering.html">Corporate Catering</a></li>
+            <li><a href="service-wedding-catering.html">Wedding Catering</a></li>
+            <li><a href="service-family-dining.html">Family Dining</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Timings & Contact -->
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="footer-timings-table">
+            <div class="timing-row">
+              <span>Morning Tiffin:</span>
+              <strong style="color:var(--color-gold);">6:30 AM – 11:30 AM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Afternoon Meals:</span>
+              <strong style="color:var(--color-gold);">12:00 PM – 3:30 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Evening Snacks:</span>
+              <strong style="color:var(--color-gold);">4:30 PM – 7:00 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Dinner Tiffin:</span>
+              <strong style="color:var(--color-gold);">7:00 PM – 10:30 PM</strong>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem; font-size:0.9rem;">
+            <p style="margin:0 0 0.4rem; color:rgba(250,246,238,0.9);">
+              <strong>Heritage Restaurant:</strong><br>
+              42 South Mada Street, Mylapore, Chennai, TN 600004
+            </p>
+            <p style="margin:0; color:var(--color-gold-light);">
+              Phone: +91 44 2847 1968
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Taste of South. All rights reserved. 
+        </div>
+        <div class="social-links footer-social-links" style="margin-top:0;">
+          <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" title="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" title="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" title="Watch our Kitchen Stories on YouTube" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="https://twitter.com" class="social-icon-btn" aria-label="X (Twitter)" title="Follow us on X" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+          </a>
+          <a href="https://tripadvisor.com" class="social-icon-btn" aria-label="TripAdvisor" title="Review us on TripAdvisor" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/><line x1="12" y1="9" x2="12" y2="15"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal & Back to Top -->
+  <div id="reservationModal" class="reservation-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="reservation-modal-card">
+      <button id="closeReservationModal" class="modal-close-btn">&times;</button>
+      <div style="text-align:center; margin-bottom:1.5rem;">
+        <span class="section-badge badge-gold">Reservation</span>
+        <h3 style="font-size:2rem; margin-bottom:0.25rem;">Book A Table</h3>
+        <p style="font-size:0.92rem; margin:0;">Join our family at Taste of South.</p>
+      </div>
+      <form action="https://formsubmit.co/annapoorna.chennai@gmail.com" method="POST" data-formsubmit>
+        <input type="hidden" name="_subject" value="New Table Reservation">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="row g-3">
+          <div class="col-md-6"><input type="text" name="name" class="form-control-custom" placeholder="Full Name" required></div>
+          <div class="col-md-6"><input type="tel" name="phone" class="form-control-custom" placeholder="Phone Number" required></div>
+          <div class="col-md-6"><input type="email" name="email" class="form-control-custom" placeholder="Email Address" required></div>
+          <div class="col-md-6">
+            <select name="guests" class="form-control-custom" required>
+              <option>2 Guests</option>
+              <option>4 Guests</option>
+              <option>6 Guests</option>
+              <option>8+ Family</option>
+            </select>
+          </div>
+          <div class="col-md-6"><input type="date" name="date" class="form-control-custom" required></div>
+          <div class="col-md-6">
+            <select name="session" class="form-control-custom" required>
+              <option>Morning Tiffin</option>
+              <option>Lunch Feast</option>
+              <option>Dinner Tiffin</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn-annapoorna btn-primary-gold w-100 btn-lg mt-3">Confirm Reservation</button>
+        <div class="form-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" aria-label="Scroll to Top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

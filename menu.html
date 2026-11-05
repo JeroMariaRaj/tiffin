@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Restaurant Menu – By Meal Time | Taste of South</title>
+  <meta name="description" content="Explore our authentic South Indian vegetarian menu. Filter by Breakfast, Lunch, Evening Snacks, Beverages, and Special Combos. Prepared fresh daily.">
+  <meta name="keywords" content="South Indian Menu, Masala Dosa, Idli Sambar, Filter Coffee, Banana Leaf Meals, Tiffin Menu">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header -->
+  <header class="annapoorna-header">
+    <div class="annapoorna-container">
+      <div class="nav-container">
+        <a href="index.html" class="brand-logo" aria-label="Taste of South Home">
+          <img src="assets/images/logo.svg" alt="Taste of South - South Indian Kitchen" class="logo-light-mode">
+          <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" class="logo-dark-mode">
+        </a>
+
+        <nav class="desktop-nav">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="index.html" class="dropdown-link">Home 1 – Traditional Landing</a>
+              <a href="home-2.html" class="dropdown-link">Home 2 – Modern Dining</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="about.html" class="nav-link">About Us</a></div>
+          <div class="nav-item"><a href="menu.html" class="nav-link active">Menu</a></div>
+          <div class="nav-item">
+            <a href="services.html" class="nav-link">
+              Services
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="services.html" class="dropdown-link">All Services Overview</a>
+              <a href="service-restaurant-dining.html" class="dropdown-link">1. Restaurant Dining</a>
+              <a href="service-breakfast-specials.html" class="dropdown-link">2. Breakfast Specials</a>
+              <a href="service-corporate-catering.html" class="dropdown-link">3. Corporate Catering</a>
+              <a href="service-wedding-catering.html" class="dropdown-link">4. Wedding Catering</a>
+              <a href="service-family-dining.html" class="dropdown-link">5. Family Dining</a>
+              <a href="service-takeaway-services.html" class="dropdown-link">6. Takeaway Services</a>
+              <a href="service-special-orders.html" class="dropdown-link">7. Special Food Orders</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="blog.html" class="nav-link">
+              Blog
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="blog.html" class="dropdown-link">All Articles</a>
+              <a href="blog-crispy-dosa-secrets.html" class="dropdown-link">Secrets of Crispy Dosa</a>
+              <a href="blog-filter-coffee-culture.html" class="dropdown-link">Filter Coffee Culture</a>
+              <a href="blog-health-benefits-idli.html" class="dropdown-link">Health Benefits of Idli</a>
+              <a href="blog-traditional-cooking-methods.html" class="dropdown-link">Soapstone Cooking Methods</a>
+              <a href="blog-fresh-spices-western-ghats.html" class="dropdown-link">Western Ghats Spices</a>
+              <a href="blog-breakfast-recipes-tradition.html" class="dropdown-link">Timeless Breakfast Rituals</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></div>
+          <div class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></div>
+        </nav>
+
+        <div class="header-actions">
+          <button id="themeToggleBtn" class="control-btn" aria-label="Toggle Theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+          <button id="rtlToggleBtn" class="control-btn" aria-label="Toggle RTL">RTL</button>
+          
+                    <button class="btn-annapoorna btn-primary-gold open-reservation-modal nav-reservation-cta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Book a Table</button>
+          <button class="mobile-menu-toggle" aria-label="Open Mobile Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/logo.svg" alt="Taste of South" style="height: 42px;">
+      <button class="mobile-drawer-close" style="background:none; border:none; font-size:1.8rem; cursor:pointer;">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home 1 – Traditional</a></li>
+      <li class="mobile-nav-item"><a href="home-2.html" class="mobile-nav-link">Home 2 – Modern Dining</a></li>
+      <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li class="mobile-nav-item"><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+      <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li class="mobile-nav-item"><a href="pricing.html" class="mobile-nav-link">Pricing Packages</a></li>
+      <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+      <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <button class="btn-annapoorna btn-primary-gold open-reservation-modal w-100 mt-auto">Book a Table</button>
+  </aside>
+
+  <!-- ========================================================================
+       PAGE BANNER
+       ======================================================================== -->
+  <div class="page-banner">
+    <div class="page-banner-bg" style="background-image: url('assets/images/Morning Breakfast Specials.jpg');"></div>
+    <div class="page-banner-content">
+      <h1>The Taste of South Menu</h1>
+      <p class="page-banner-subtitle">Crafted with stone-ground batter, pure A2 ghee, and farm-fresh spices.</p>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       INTERACTIVE MENU SECTION
+       ======================================================================== -->
+  <section class="section-spacing bg-surface-secondary">
+    <div class="annapoorna-container">
+
+      <!-- Interactive Filter & Search Bar -->
+      <div class="menu-filter-wrapper">
+        <div class="menu-filter-header">
+          <!-- Category Pills -->
+          <div class="filter-pills" role="tablist">
+            <button class="filter-pill-btn active" data-filter="all">All Dishes</button>
+            <button class="filter-pill-btn" data-filter="breakfast">Breakfast</button>
+            <button class="filter-pill-btn" data-filter="lunch">Lunch</button>
+            <button class="filter-pill-btn" data-filter="snacks">Evening Snacks</button>
+            <button class="filter-pill-btn" data-filter="beverages">Beverages</button>
+            <button class="filter-pill-btn" data-filter="combos">Special Combos</button>
+          </div>
+
+          <!-- Instant Search Box -->
+          <div class="menu-search-box">
+            <svg class="menu-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="menuSearchInput" class="menu-search-input" placeholder="Search dish, e.g. Dosa, Pongal...">
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1rem; padding-top:0.75rem; border-top:1px solid var(--border-light); font-size:0.85rem; color:var(--text-muted);">
+          <span id="menuResultCount">Showing all signature dishes</span>
+          <span>🟢 100% Pure Vegetarian Kitchen</span>
+        </div>
+      </div>
+
+      <!-- Food Grid -->
+      <div class="row g-4" id="menuFoodGrid">
+
+        <!-- ================= BREAKFAST ITEMS ================= -->
+        <!-- Dish 1 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="breakfast">
+          <div class="food-card">
+            <div class="badge-bestseller">Signature</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/Ghee Podi Roast Dosa.jpg" alt="Special Ghee Podi Roast Dosa" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️🌶️</div>
+              </div>
+              <h3 class="food-title">Ghee Podi Roast Dosa</h3>
+              <p class="food-desc">Super crispy fermented rice-lentil crepe dusted generously with spicy homemade gun powder and drenched in pure melted cow ghee.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary badge-ghee">A2 Cow Ghee</span>
+                <span class="badge-dietary">Gluten Free</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹185</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 2 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="breakfast">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Malleswaram Thatte Idli.jpg" alt="Malleswaram Thatte Idli" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️</div>
+              </div>
+              <h3 class="food-title">Malleswaram Thatte Idli (2 Pcs)</h3>
+              <p class="food-desc">Large platter-sized steamed idli served piping hot with freshly churned white butter, Vadacurry, and red coconut chutney.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Steamed</span>
+                <span class="badge-dietary">Probiotic</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹130</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="breakfast">
+          <div class="food-card">
+            <div class="badge-chef-special">Temple Recipe</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/Temple Ghee Ven Pongal.jpg" alt="Temple Ghee Ven Pongal" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️</div>
+              </div>
+              <h3 class="food-title">Temple Ghee Ven Pongal</h3>
+              <p class="food-desc">Melt-in-mouth rice and moong dal porridge tempered with crushed Malabar black pepper, fresh ginger, curry leaves, and roasted whole cashews.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary badge-ghee">Desi Ghee</span>
+                <span class="badge-dietary">Satvik</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹150</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 4 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="breakfast">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Malabar Puffy Poori Masala.jpg" alt="Malabar Puffy Poori Masala" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️</div>
+              </div>
+              <h3 class="food-title">Malabar Puffy Poori Masala (3 Pcs)</h3>
+              <p class="food-desc">Whole wheat puffed golden breads served with mildly spiced potato-onion bhaji cooked with mustard seeds and turmeric.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Whole Wheat</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹140</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 5 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="breakfast">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Mysore Masala Dosa.jpg" alt="Mysore Masala Dosa" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️🌶️</div>
+              </div>
+              <h3 class="food-title">Classic Mysore Masala Dosa</h3>
+              <p class="food-desc">Golden crisp exterior smeared on the inner surface with our secret red chili-garlic chutney paste and stuffed with potato masala.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Spiced</span>
+                <span class="badge-dietary">Popular</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹175</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 6 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="breakfast">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Onion Rava Ghee Roast.jpg" alt="Crispy Onion Rava Dosa" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️</div>
+              </div>
+              <h3 class="food-title">Onion Rava Ghee Roast</h3>
+              <p class="food-desc">Lacy semolina and rice crepe studded with cumin seeds, crushed black pepper, finely chopped shallots, and green chilies.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary badge-ghee">Pure Ghee</span>
+                <span class="badge-dietary">Crunchy</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹165</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= LUNCH ITEMS ================= -->
+        <!-- Dish 7 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="lunch">
+          <div class="food-card">
+            <div class="badge-bestseller">Grand Feast</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/South Indian Raja Sapadu.jpg" alt="Traditional South Indian Raja Sapadu" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️🌶️</div>
+              </div>
+              <h3 class="food-title">South Indian Raja Sapadu (Full Meals)</h3>
+              <p class="food-desc">Full 14-item traditional meal served on fresh banana leaf: Sona Masoori rice, Poriyal, Kootu, Drumstick Sambar, Pepper Rasam, Mor Kuzhambu, Appalam, Vatha Kuzhambu, Curd & Payasam.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Unlimited Refills</span>
+                <span class="badge-dietary">Authentic</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹280</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 8 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="lunch">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Mysore Bisi Bele Bath.jpg" alt="Karnataka Bisi Bele Bath" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️🌶️</div>
+              </div>
+              <h3 class="food-title">Mysore Bisi Bele Bath</h3>
+              <p class="food-desc">Slow-simmered rice, toor dal, and seasonal vegetables blended with aromatic Mysore masala spices, roasted peanuts, and finished with deep ghee tempering.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary badge-ghee">Pure Ghee</span>
+                <span class="badge-dietary">Comfort Bowl</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹160</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 9 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="lunch">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Thalicha Thayir Sadam (Curd Rice).jpg" alt="Tempered Curd Rice" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">Mild</div>
+              </div>
+              <h3 class="food-title">Thalicha Thayir Sadam (Curd Rice)</h3>
+              <p class="food-desc">Creamy mashed rice folded into fresh buffalo curd, tempered with mustard seeds, ginger, asafoetida, green chili, and crowned with pomegranate seeds.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Cooling</span>
+                <span class="badge-dietary">Probiotic</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹120</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= EVENING SNACKS ================= -->
+        <!-- Dish 10 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="snacks">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Crispy Sambar Medu Vada.jpg" alt="Crispy Medu Vada" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️</div>
+              </div>
+              <h3 class="food-title">Crispy Medu Vada (2 Pcs)</h3>
+              <p class="food-desc">Golden crisp urad dal doughnuts studded with crushed black pepper, fresh ginger, and curry leaves. Served with coconut chutney and hot sambar.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Gluten Free</span>
+                <span class="badge-dietary">Freshly Fried</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹95</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 11 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="snacks">
+          <div class="food-card">
+            <div class="badge-chef-special">Tea Time Special</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/Mangalore Goli Baje Mysore Bonda.jpg" alt="Mysore Bonda / Goli Baje" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️</div>
+              </div>
+              <h3 class="food-title">Mangalore Goli Baje / Mysore Bonda</h3>
+              <p class="food-desc">Crisp golden puff fritters with a pillowy soft interior made of fermented curd batter, coconut bits, and ginger slivers.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Snack Special</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹110</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 12 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="snacks">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Marina Beach Bajji Platter.jpg" alt="Plantain & Milagai Bajji Platter" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️🌶️</div>
+              </div>
+              <h3 class="food-title">Marina Beach Bajji Platter</h3>
+              <p class="food-desc">Assortment of raw banana (vazhaikkai) and mild green chili (milagai) fritters dipped in spiced gram flour and fried to golden perfection.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Street Classic</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹125</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= BEVERAGES ================= -->
+        <!-- Dish 13 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="beverages">
+          <div class="food-card">
+            <div class="badge-bestseller">Iconic</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/Kumbakonam Degree Coffee.jpg" alt="Kumbakonam Degree Filter Coffee" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">☕</div>
+              </div>
+              <h3 class="food-title">Kumbakonam Degree Filter Coffee</h3>
+              <p class="food-desc">First extraction of dark roasted Arabica-Robusta beans with 15% Chicory, blended with thick cows milk and pulled into velvety froth.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Brass Davarah</span>
+                <span class="badge-dietary">Fresh Brew</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹65</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 14 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="beverages">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Sukku Malli Herbal Coffee.jpg" alt="Sukku Malli Herbal Coffee" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">Aromatic</div>
+              </div>
+              <h3 class="food-title">Sukku Malli Herbal Coffee</h3>
+              <p class="food-desc">Caffeine-free therapeutic hot brew made with dry ginger, coriander seeds, black peppercorns, tulsi, and palm jaggery (panangkarupatti).</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Medicinal</span>
+                <span class="badge-dietary">Immunity</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹75</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 15 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="beverages">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Royal Kashmir Saffron Badam Milk.jpg" alt="Royal Saffron Badam Milk" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">Sweet</div>
+              </div>
+              <h3 class="food-title">Royal Kashmir Saffron Badam Milk</h3>
+              <p class="food-desc">Slow-reduced whole milk infused with soaked and peeled California almonds, Kashmiri saffron strands, green cardamom, and pistachio slivers.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Rich Dry Fruits</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹110</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= SPECIAL COMBOS ================= -->
+        <!-- Dish 16 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="combos">
+          <div class="food-card">
+            <div class="badge-bestseller">Top Combo</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/Taste of South Royal Mini Tiffin.jpg" alt="Taste of South Royal Mini Tiffin" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️🌶️</div>
+              </div>
+              <h3 class="food-title">Taste of South Royal Mini Tiffin Platter</h3>
+              <p class="food-desc">A complete feast in one brass plate: 1 Mini Masala Dosa, 1 Thatte Idli, 1 Crispy Medu Vada, 1 Cup Ven Pongal, Kesari, Sambar & 3 fresh chutneys with degree filter coffee.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary badge-ghee">Grand Combo</span>
+                <span class="badge-dietary">All-in-One</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹245 <span class="original-price">₹280</span></div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 17 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="combos">
+          <div class="food-card">
+            <div class="badge-chef-special">Roast Feast</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/Ghee Roast & Sambar Vada Duo.jpg" alt="Ghee Roast Duo & Vada Combo" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️🌶️</div>
+              </div>
+              <h3 class="food-title">Ghee Roast & Sambar Vada Duo</h3>
+              <p class="food-desc">One full crispy cone Ghee Roast Dosa served alongside 1 Sambar Medu Vada and a piping hot brass tumbler of filter coffee.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary badge-ghee">Pure Ghee</span>
+                <span class="badge-dietary">Popular Breakfast</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹210</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 18 -->
+        <div class="col-lg-4 col-md-6 food-card-wrapper" data-category="combos">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Executive 5-Course Meal Box.jpg" alt="Chettinad Executive Lunch Box" loading="lazy">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <div class="spicy-meter">🌶️🌶️</div>
+              </div>
+              <h3 class="food-title">Executive 5-Course Meal Box</h3>
+              <p class="food-desc">Steamed Sona Masoori Rice, Bisibelabath, Tempered Curd Rice, Potato Kara Curry, Appalam, Pickle, and warm Mysore Pak in eco-friendly banana leaf containers.</p>
+              <div class="food-card-tags">
+                <span class="badge-dietary">Takeaway Ready</span>
+                <span class="badge-dietary">Balanced</span>
+              </div>
+              <div class="food-card-footer">
+                <div class="food-price">₹195</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Quick View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Empty State for Filter/Search -->
+      <div id="menuEmptyState" style="display:none; text-align:center; padding:4rem 1rem;">
+        <img src="assets/images/error-404-art.svg" alt="No Dishes Found" style="height:140px; margin:0 auto 1.5rem;">
+        <h3>No Dishes Matched Your Search</h3>
+        <p style="color:var(--text-muted); max-width:400px; margin:0 auto 1.5rem;">We couldn't find any dishes matching your query. Try searching for "Dosa", "Idli", "Coffee" or "Pongal".</p>
+        <button class="btn-annapoorna btn-primary-gold" onclick="document.getElementById('menuSearchInput').value=''; document.querySelector('.filter-pill-btn[data-filter=\'all\']').click();">Clear Search Filters</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ SECTION: Menu, Ingredients & Dietary
+       ======================================================================== -->
+  <section class="section-spacing bg-surface-secondary">
+    <div class="annapoorna-container" style="max-width: 860px;">
+      <div class="section-header">
+        <span class="section-badge badge-gold">Culinary Insights</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+        <p class="section-subtitle">Everything you need to know about our stone-ground batters, pure A2 ghee, and satvik preparation.</p>
+      </div>
+
+      <div class="accordion" id="menuFaqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMenu1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu1" aria-expanded="true" aria-controls="collapseMenu1">
+              Is your food 100% vegetarian, and what type of cooking oils and ghee do you use?
+            </button>
+          </h2>
+          <div id="collapseMenu1" class="accordion-collapse collapse show" aria-labelledby="headingMenu1" data-bs-parent="#menuFaqAccordion">
+            <div class="accordion-body">
+              Taste of South is strictly 100% pure vegetarian with zero meat, fish, eggs, or animal gelatin anywhere in our premises. We cook exclusively with farm-sourced 100% pure A2 cow ghee, cold-pressed sesame (gingelly) oil, and unrefined groundnut oil. We never use palm oil or commercial shortening.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMenu2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu2" aria-expanded="false" aria-controls="collapseMenu2">
+              Do you offer Jain-friendly, vegan, or gluten-sensitive options?
+            </button>
+          </h2>
+          <div id="collapseMenu2" class="accordion-collapse collapse" aria-labelledby="headingMenu2" data-bs-parent="#menuFaqAccordion">
+            <div class="accordion-body">
+              Yes! Our signature Idlis, Thatte Idli, and Ragi Dosas are naturally gluten-free and slow-fermented. For Jain guests, we offer dedicated onion-free, garlic-free sambars and freshly grated coconut chutneys prepared in separate sacred cooking vessels upon request.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMenu3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu3" aria-expanded="false" aria-controls="collapseMenu3">
+              How is your idli and dosa batter prepared daily?
+            </button>
+          </h2>
+          <div id="collapseMenu3" class="accordion-collapse collapse" aria-labelledby="headingMenu3" data-bs-parent="#menuFaqAccordion">
+            <div class="accordion-body">
+              Our batter is stone-ground twice every single day using traditional granite wet grinders with premium urad dal from Tirunelveli and aged parboiled rice. The batter is allowed 12 hours of natural slow fermentation without chemical rising agents, baking soda, or artificial preservatives.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMenu4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu4" aria-expanded="false" aria-controls="collapseMenu4">
+              What is the secret behind your Kumbakonam Degree Filter Coffee?
+            </button>
+          </h2>
+          <div id="collapseMenu4" class="accordion-collapse collapse" aria-labelledby="headingMenu4" data-bs-parent="#menuFaqAccordion">
+            <div class="accordion-body">
+              Our coffee is crafted with an authentic 80:20 master blend of shade-grown Chikmagalur Arabica peaberry and roasted chicory. Slow-dripped through brass gravity filters, it is combined with thick, unadulterated high-fat dairy milk and served frothing hot in traditional brass davarah-tumblers.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMenu5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu5" aria-expanded="false" aria-controls="collapseMenu5">
+              Can dishes be tailored for milder spice tolerances or children?
+            </button>
+          </h2>
+          <div id="collapseMenu5" class="accordion-collapse collapse" aria-labelledby="headingMenu5" data-bs-parent="#menuFaqAccordion">
+            <div class="accordion-body">
+              Yes, our kitchen captains gladly tailor any dish. For children and elders with delicate palates, we serve mild butter dosas, non-spicy vegetable kurmas, and cooling curd rice tempered gently with roasted mustard and curry leaves without green chillies.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+      <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="annapoorna-footer">
+    <div class="annapoorna-container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom:1.25rem;">
+            <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" style="height:54px;">
+          </a>
+          <p style="font-size:0.92rem; line-height:1.7; margin-bottom:1.5rem;">
+            Preserving South India's golden heritage since 1968. Authentic stone-ground tiffin, hand-crafted degree filter coffee, and traditional wedding feasts.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation & Explore (Exact Navbar Names) -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1 – Traditional</a></li>
+            <li><a href="home-2.html">Home 2 – Modern Dining</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (5 Core Offerings) -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-restaurant-dining.html">Restaurant Dining</a></li>
+            <li><a href="service-breakfast-specials.html">Breakfast Specials</a></li>
+            <li><a href="service-corporate-catering.html">Corporate Catering</a></li>
+            <li><a href="service-wedding-catering.html">Wedding Catering</a></li>
+            <li><a href="service-family-dining.html">Family Dining</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Timings & Contact -->
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="footer-timings-table">
+            <div class="timing-row">
+              <span>Morning Tiffin:</span>
+              <strong style="color:var(--color-gold);">6:30 AM – 11:30 AM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Afternoon Meals:</span>
+              <strong style="color:var(--color-gold);">12:00 PM – 3:30 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Evening Snacks:</span>
+              <strong style="color:var(--color-gold);">4:30 PM – 7:00 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Dinner Tiffin:</span>
+              <strong style="color:var(--color-gold);">7:00 PM – 10:30 PM</strong>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem; font-size:0.9rem;">
+            <p style="margin:0 0 0.4rem; color:rgba(250,246,238,0.9);">
+              <strong>Heritage Restaurant:</strong><br>
+              42 South Mada Street, Mylapore, Chennai, TN 600004
+            </p>
+            <p style="margin:0; color:var(--color-gold-light);">
+              Phone: +91 44 2847 1968
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Taste of South. All rights reserved. 
+        </div>
+        <div class="social-links footer-social-links" style="margin-top:0;">
+          <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" title="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" title="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" title="Watch our Kitchen Stories on YouTube" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="https://twitter.com" class="social-icon-btn" aria-label="X (Twitter)" title="Follow us on X" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+          </a>
+          <a href="https://tripadvisor.com" class="social-icon-btn" aria-label="TripAdvisor" title="Review us on TripAdvisor" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/><line x1="12" y1="9" x2="12" y2="15"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Table Reservation Modal -->
+  <div id="reservationModal" class="reservation-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="reservation-modal-card">
+      <button id="closeReservationModal" class="modal-close-btn">&times;</button>
+      <div style="text-align:center; margin-bottom:1.5rem;">
+        <span class="section-badge badge-gold">Reservation</span>
+        <h3 style="font-size:2rem; margin-bottom:0.25rem;">Book A Table</h3>
+        <p style="font-size:0.92rem; margin:0;">Experience authentic Mylapore hospitality.</p>
+      </div>
+      <form action="https://formsubmit.co/annapoorna.chennai@gmail.com" method="POST" data-formsubmit>
+        <input type="hidden" name="_subject" value="New Table Reservation from Menu">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="row g-3">
+          <div class="col-md-6"><input type="text" name="name" class="form-control-custom" placeholder="Full Name" required></div>
+          <div class="col-md-6"><input type="tel" name="phone" class="form-control-custom" placeholder="Phone Number" required></div>
+          <div class="col-md-6"><input type="email" name="email" class="form-control-custom" placeholder="Email Address" required></div>
+          <div class="col-md-6">
+            <select name="guests" class="form-control-custom" required>
+              <option>2 Guests</option>
+              <option>4 Guests</option>
+              <option>6 Guests</option>
+              <option>8+ Family</option>
+            </select>
+          </div>
+          <div class="col-md-6"><input type="date" name="date" class="form-control-custom" required></div>
+          <div class="col-md-6">
+            <select name="session" class="form-control-custom" required>
+              <option>Morning Tiffin</option>
+              <option>Lunch Feast</option>
+              <option>Dinner Tiffin</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn-annapoorna btn-primary-gold w-100 btn-lg mt-3">Confirm Reservation</button>
+        <div class="form-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" aria-label="Scroll to Top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu-filter.js"></script>
+</body>
+</html>

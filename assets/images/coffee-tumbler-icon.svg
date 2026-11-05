@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <!-- Davarah Bowl -->
+  <path d="M8 32 C8 42 40 42 40 32 L38 28 L10 28 Z" fill="#E9A825" fill-opacity="0.25" stroke="#D48B12" stroke-width="2"/>
+  <ellipse cx="24" cy="28" rx="15" ry="3" fill="#FAF6EE" stroke="#D48B12" stroke-width="1.5"/>
+  <!-- Tumbler Glass -->
+  <path d="M16 12 L19 28 L29 28 L32 12 Z" fill="#E9A825" fill-opacity="0.35" stroke="#D48B12" stroke-width="2"/>
+  <ellipse cx="24" cy="12" rx="8" ry="2.5" fill="#3D2314" stroke="#D48B12" stroke-width="1.5"/>
+  <!-- Froth -->
+  <ellipse cx="24" cy="11.5" rx="6.5" ry="1.8" fill="#F4E8D1"/>
+  <!-- Steam Curves -->
+  <path d="M22 6 C21 4 23 3 22 1" stroke="#C85A32" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
+  <path d="M26 7 C25 5 27 4 26 2" stroke="#C85A32" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
+</svg>

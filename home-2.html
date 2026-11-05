@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste of South Modern Dining – Contemporary South Indian Gastronomy</title>
+  <meta name="description" content="Discover contemporary South Indian dining where ancient fermentation traditions meet modern culinary presentation. Artisanal dosas, heritage flights, and curated tastings.">
+  <meta name="keywords" content="Modern South Indian, Fine Dining, Artisanal Dosa, Gourmet Tiffin, Chennai Dining, South Indian Gastronomy">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="TASTE OF SOUTH – Modern South Indian Gastronomy">
+  <meta property="og:description" content="Ancient Roots. Modern Artistry. Contemporary South Indian Fine Dining.">
+  <meta property="og:image" content="assets/images/Secrets Behind a Perfect Crispy Dosa.jpg">
+  <meta property="og:type" content="restaurant.restaurant">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Custom Core & RTL Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <style>
+    /* Dedicated Home 2 Modern Styling Enhancements */
+    .home-2-hero {
+      position: relative;
+      background: linear-gradient(135deg, #09130D 0%, #12241A 60%, #0B1911 100%);
+      padding-top: clamp(4rem, 7vw, 6.5rem);
+      padding-bottom: clamp(5rem, 8vw, 8rem);
+      overflow: hidden;
+    }
+    .modern-experience-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(233, 168, 37, 0.12);
+      border: 1px solid rgba(233, 168, 37, 0.35);
+      color: var(--color-gold-light);
+      padding: 0.45rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-family: var(--font-nav);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 1.5rem;
+    }
+    .reservation-strip-box {
+      background: rgba(20, 31, 26, 0.85);
+      border: 1px solid rgba(233, 168, 37, 0.3);
+      backdrop-filter: blur(15px);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 2rem;
+      margin-top: 3rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    }
+    .chef-showcase-section {
+      background: radial-gradient(circle at center, #16241C 0%, #0A120E 100%);
+      color: var(--text-light);
+      border-top: 1px solid rgba(233, 168, 37, 0.2);
+      border-bottom: 1px solid rgba(233, 168, 37, 0.2);
+    }
+    .tasting-flight-card {
+      background: #141F1A;
+      border: 1px solid rgba(233, 168, 37, 0.25);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .tasting-flight-card:hover {
+      border-color: var(--color-gold);
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-glow);
+    }
+    .tasting-course-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(76px, 90px);
+      column-gap: 1rem;
+      align-items: baseline;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+      padding-block: 0.75rem;
+    }
+    .tasting-course-item > span:first-child {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .tasting-course-item > span:last-child {
+      min-width: 0;
+      text-align: right;
+      overflow-wrap: anywhere;
+    }
+    .tasting-course-item:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Main Header & Navigation -->
+  <header class="annapoorna-header">
+    <div class="annapoorna-container">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Taste of South Home">
+          <img src="assets/images/logo.svg" alt="Taste of South - South Indian Kitchen" class="logo-light-mode">
+          <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" class="logo-dark-mode">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <div class="nav-item">
+            <a href="home-2.html" class="nav-link active">
+              Home
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="index.html" class="dropdown-link">
+                Home 1 – Traditional Landing
+                <span class="dropdown-tag">Classic</span>
+              </a>
+              <a href="home-2.html" class="dropdown-link">
+                Home 2 – Modern Dining
+                <span class="dropdown-tag">Contemporary</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav-item"><a href="about.html" class="nav-link">About Us</a></div>
+          <div class="nav-item"><a href="menu.html" class="nav-link">Menu</a></div>
+
+          <div class="nav-item">
+            <a href="services.html" class="nav-link">
+              Services
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="services.html" class="dropdown-link">All Services Overview</a>
+              <a href="service-restaurant-dining.html" class="dropdown-link">1. Restaurant Dining</a>
+              <a href="service-breakfast-specials.html" class="dropdown-link">2. Breakfast Specials</a>
+              <a href="service-corporate-catering.html" class="dropdown-link">3. Corporate Catering</a>
+              <a href="service-wedding-catering.html" class="dropdown-link">4. Wedding Catering</a>
+              <a href="service-family-dining.html" class="dropdown-link">5. Family Dining</a>
+              <a href="service-takeaway-services.html" class="dropdown-link">6. Takeaway Services</a>
+              <a href="service-special-orders.html" class="dropdown-link">7. Special Food Orders</a>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="blog.html" class="nav-link">
+              Blog
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="blog.html" class="dropdown-link">All Articles</a>
+              <a href="blog-crispy-dosa-secrets.html" class="dropdown-link">Secrets of Crispy Dosa</a>
+              <a href="blog-filter-coffee-culture.html" class="dropdown-link">Degree Filter Coffee Culture</a>
+              <a href="blog-health-benefits-idli.html" class="dropdown-link">Health Benefits of Idli</a>
+              <a href="blog-traditional-cooking-methods.html" class="dropdown-link">Soapstone Cooking Methods</a>
+              <a href="blog-fresh-spices-western-ghats.html" class="dropdown-link">Western Ghats Spices</a>
+              <a href="blog-breakfast-recipes-tradition.html" class="dropdown-link">Timeless Breakfast Rituals</a>
+            </div>
+          </div>
+
+          <div class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></div>
+          <div class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></div>
+        </nav>
+
+        <!-- Controls -->
+        <div class="header-actions">
+          <button id="themeToggleBtn" class="control-btn" aria-label="Toggle Theme" title="Toggle Dark/Light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+          <button id="rtlToggleBtn" class="control-btn" aria-label="Toggle RTL Direction">RTL</button>
+          
+                    <button class="btn-annapoorna btn-primary-gold open-reservation-modal nav-reservation-cta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Book a Table</button>
+          <button class="mobile-menu-toggle" aria-label="Open Mobile Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/logo-light.svg" alt="Taste of South" style="height: 42px;">
+      <button class="mobile-drawer-close" style="background:none; border:none; color:var(--text-main); font-size:1.8rem; cursor:pointer;">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Home <span>▾</span></a>
+        <div class="mobile-dropdown open">
+          <a href="index.html">Home 1 – Traditional Landing</a>
+          <a href="home-2.html">Home 2 – Modern Dining</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li class="mobile-nav-item"><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Services <span>▾</span></a>
+        <div class="mobile-dropdown">
+          <a href="services.html">All Services</a>
+          <a href="service-restaurant-dining.html">Restaurant Dining</a>
+          <a href="service-breakfast-specials.html">Breakfast Specials</a>
+          <a href="service-corporate-catering.html">Corporate Catering</a>
+          <a href="service-wedding-catering.html">Wedding Catering</a>
+          <a href="service-family-dining.html">Family Dining</a>
+          <a href="service-takeaway-services.html">Takeaway Services</a>
+          <a href="service-special-orders.html">Special Orders</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Blog <span>▾</span></a>
+        <div class="mobile-dropdown">
+          <a href="blog.html">All Blog Articles</a>
+          <a href="blog-crispy-dosa-secrets.html">Secrets of Crispy Dosa</a>
+          <a href="blog-filter-coffee-culture.html">Filter Coffee Culture</a>
+          <a href="blog-health-benefits-idli.html">Health Benefits of Idli</a>
+          <a href="blog-traditional-cooking-methods.html">Soapstone Cooking Methods</a>
+          <a href="blog-fresh-spices-western-ghats.html">Western Ghats Spices</a>
+          <a href="blog-breakfast-recipes-tradition.html">Timeless Breakfast Rituals</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item"><a href="pricing.html" class="mobile-nav-link">Pricing Packages</a></li>
+      <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+      <li class="mobile-nav-item"><a href="404.html" class="mobile-nav-link">404 Error Page</a></li>
+      <li class="mobile-nav-item"><a href="coming-soon.html" class="mobile-nav-link">Coming Soon</a></li>
+    </ul>
+
+    <div style="margin-top:auto;">
+      <button class="btn-annapoorna btn-primary-gold open-reservation-modal w-100">Reserve An Experience</button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HERO: Modern Dark Forest Green Asymmetrical Showcase
+       ======================================================================== -->
+  <section class="home-2-hero">
+    <div class="annapoorna-container">
+      <div class="hero-modern-grid">
+        <!-- Text Column -->
+        <div class="hero-modern-text">
+          <div class="modern-experience-pill">
+            <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--color-gold);"></span>
+            Contemporary Southern Gastronomy
+          </div>
+
+          <h1>
+            Reimagining Heritage Flavors with
+            <span class="highlight-gold">Contemporary Artistry.</span>
+          </h1>
+
+          <p class="lead">
+            Where ancestral 14-hour stone fermentation meets refined plating, single-estate cold-pressed infusions, and hand-pulled artisanal brews. An elevated ode to South India's culinary soul.
+          </p>
+
+          <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
+            <button class="btn-annapoorna btn-primary-gold btn-lg open-reservation-modal">
+              Reserve A Table
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <a href="menu.html" class="btn-annapoorna btn-outline-gold btn-lg">
+              Explore Tasting Menu
+            </a>
+          </div>
+
+          <!-- Instant Reservation Strip -->
+          <div class="reservation-strip-box">
+            <form action="https://formsubmit.co/annapoorna.chennai@gmail.com" method="POST" data-formsubmit style="display:grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) 120px; gap:0.75rem; align-items:end;">
+              <input type="hidden" name="_subject" value="Modern Dining Quick Booking">
+              <input type="hidden" name="_captcha" value="false">
+              <div>
+                <label style="font-size:0.78rem; font-family:var(--font-nav); color:var(--color-gold); text-transform:uppercase; margin-bottom:0.25rem; display:block;">Date</label>
+                <input type="date" name="date" class="form-control-custom" style="padding:0.45rem 0.65rem; font-size:0.85rem;" required>
+              </div>
+              <div>
+                <label style="font-size:0.78rem; font-family:var(--font-nav); color:var(--color-gold); text-transform:uppercase; margin-bottom:0.25rem; display:block;">Time</label>
+                <select name="time" class="form-control-custom" style="padding:0.45rem 0.65rem; font-size:0.85rem;" required>
+                  <option>7:30 PM</option>
+                  <option>8:15 PM</option>
+                  <option>9:00 PM</option>
+                  <option>12:30 PM</option>
+                </select>
+              </div>
+              <div>
+                <label style="font-size:0.78rem; font-family:var(--font-nav); color:var(--color-gold); text-transform:uppercase; margin-bottom:0.25rem; display:block;">Guests</label>
+                <select name="guests" class="form-control-custom" style="padding:0.45rem 0.65rem; font-size:0.85rem;" required>
+                  <option>2 Guests</option>
+                  <option>4 Guests</option>
+                  <option>6 Guests</option>
+                  <option>Chef's Table</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-annapoorna btn-primary-terracotta" style="padding:0.55rem; font-size:0.85rem;">Find Table</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Visual Showcase: Unique Modern Fine-Dining Centerpiece -->
+        <div class="hero-modern-visual">
+          <div class="hero-unique-frame">
+            <div class="hero-ambient-glow"></div>
+            <img src="assets/images/Mysore Masala Dosa.jpg" alt="Artisanal South Indian Gastronomy" class="hero-unique-img" loading="eager">
+            
+            <!-- Floating Rating Badge -->
+            <div class="hero-floating-badge badge-top-right">
+              <div class="badge-icon">★</div>
+              <div>
+                <strong>4.9 / 5.0</strong>
+                <span>1,400+ Verified Diners</span>
+              </div>
+            </div>
+
+            <!-- Floating Culinary Signature Badge -->
+            <div class="hero-floating-badge badge-top-left">
+              <div class="badge-pulse-dot"></div>
+              <div>
+                <strong>Ancestral Gastronomy</strong>
+                <span>14-Hour Stone Fermentation</span>
+              </div>
+            </div>
+
+            <!-- Chef Quote Overlay -->
+            <div class="floating-chef-quote hero-quote-positioned">
+              <p>"We do not alter the authentic recipes; we illuminate their quiet genius through precision temperature and artful craft."</p>
+              <span>— Master Chef Sadasivam • Culinary Director</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 1: Curated Menu Showcase (Interactive Modern Filtering)
+       ======================================================================== -->
+  <section class="section-spacing bg-surface-secondary">
+    <div class="annapoorna-container">
+      <div class="section-header">
+        <span class="section-badge badge-gold">The Degustation</span>
+        <h2 class="section-title">Artisanal Menu Showcase</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+        <p class="section-subtitle">Each creation honors ancient grain varietals, heritage tempering oils, and slow-simmered herbal extracts.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Item 1: Truffle Gunpowder Ghee Roast -->
+        <div class="col-lg-4 col-md-6">
+          <div class="food-card">
+            <div class="badge-bestseller">Signature</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/Mysore Masala Dosa.jpg" alt="Truffle Gunpowder Ghee Roast">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <span class="badge-dietary badge-ghee">A2 Cow Ghee</span>
+              </div>
+              <h3 class="food-title">Truffle Infused Podi Roast</h3>
+              <p class="food-desc">Crisp fermented crepe layered with slow-roasted lentil podi and finished with an aromatic drizzle of cold-pressed truffle ghee.</p>
+              <div class="food-card-footer">
+                <div class="food-price">₹260</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Steamed Podi Button Idlis with Trio Quenelles -->
+        <div class="col-lg-4 col-md-6">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Morning Breakfast Specials.jpg" alt="Button Idli Platter">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <span class="badge-dietary">Gluten Free</span>
+              </div>
+              <h3 class="food-title">Steamed Button Idli Flight</h3>
+              <p class="food-desc">Fourteen bite-sized cloud idlis tossed in Malabar curry leaf butter, accompanied by roasted walnut, smoked tomato, and mint coconut quenelles.</p>
+              <div class="food-card-footer">
+                <div class="food-price">₹195</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Smoked Drumstick Pepper Rasam Shot -->
+        <div class="col-lg-4 col-md-6">
+          <div class="food-card">
+            <div class="badge-chef-special">Palate Cleanser</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/The Spice Odyssey Sourcing Western Ghats Ingredients.jpg" alt="Smoked Drumstick Rasam">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <span class="badge-dietary">Digestive Elixir</span>
+              </div>
+              <h3 class="food-title">Smoked Mor Kuzhambu & Pepper Rasam</h3>
+              <p class="food-desc">Charcoal-infused heirloom tomato broth spiked with coarse crushed Tellicherry black peppercorns and fresh shallots.</p>
+              <div class="food-card-footer">
+                <div class="food-price">₹140</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Chettinad Mushroom Chukka Uttappam -->
+        <div class="col-lg-4 col-md-6">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Timeless Morning Rituals Southern Breakfasts.jpg" alt="Chettinad Mushroom Uttappam">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <span class="badge-dietary">Spiced</span>
+              </div>
+              <h3 class="food-title">Wild Mushroom Chukka Uttappam</h3>
+              <p class="food-desc">Thick fluffy griddled pancake topped with dry-roasted button mushrooms, fennel seeds, shallots, and fresh cilantro.</p>
+              <div class="food-card-footer">
+                <div class="food-price">₹220</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Mysore Pak Degustation with Saffron Crema -->
+        <div class="col-lg-4 col-md-6">
+          <div class="food-card">
+            <div class="badge-chef-special">Dessert Craft</div>
+            <div class="food-card-thumb">
+              <img src="assets/images/Festival Sweets, Savories & Stone-Ground Batter.jpg" alt="Artisanal Mysore Pak">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <span class="badge-dietary badge-ghee">Melt-in-Mouth</span>
+              </div>
+              <h3 class="food-title">Artisanal Ghee Mysore Pak</h3>
+              <p class="food-desc">Aerated gram flour confection saturated with warm organic ghee, garnished with gold leaf and served beside saffron cardamom reduction.</p>
+              <div class="food-card-footer">
+                <div class="food-price">₹180</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Nitro Degree Cold Brew -->
+        <div class="col-lg-4 col-md-6">
+          <div class="food-card">
+            <div class="food-card-thumb">
+              <img src="assets/images/Why South Indian Filter Coffee Is An Art Form.jpg" alt="Nitro Cold Filter Coffee">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-header">
+                <span class="veg-indicator"><span class="dot"></span></span>
+                <span class="badge-dietary">Signature Brew</span>
+              </div>
+              <h3 class="food-title">Nitro Degree Filter Brew</h3>
+              <p class="food-desc">18-hour cold steeped Chikmagalur dark roast infused with nitrogen bubbles for a Guinness-like silky head without added dairy.</p>
+              <div class="food-card-footer">
+                <div class="food-price">₹160</div>
+                <button class="btn-annapoorna btn-outline-forest btn-sm open-dish-modal">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: Chef's Recommendation & Philosophy
+       ======================================================================== -->
+  <section class="section-spacing chef-showcase-section">
+    <div class="annapoorna-container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div style="position:relative;">
+            <img src="assets/images/Chef Sadasivam.jpg" alt="Executive Chef Sadasivam" style="width:100%; height:520px; object-fit:cover; border-radius:var(--radius-lg); border:2px solid var(--color-gold);">
+            <div style="position:absolute; bottom:-20px; right:-20px; background:var(--color-terracotta); color:#fff; padding:1.2rem 1.8rem; border-radius:var(--radius-md); box-shadow:var(--shadow-lg);">
+              <div style="font-family:var(--font-heading); font-size:2rem; font-weight:700; line-height:1;">38 Yrs</div>
+              <div style="font-family:var(--font-nav); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em;">Mastery of Southern Spice</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <span class="section-badge badge-gold">Master Craftsman</span>
+          <h2 style="color:#FFFFFF; margin-bottom:1rem;">"South Indian cuisine is fundamentally an ancient science of probiotic balance and harmonic spice notes."</h2>
+          <p style="color:rgba(250,246,238,0.85); font-size:1.1rem; line-height:1.8;">
+            Master Chef Sadasivam began his apprenticeship under his grandfather at the famed Meenakshi Amman Temple feasts in Madurai. At Taste of South Atelier, he bridges that deep sacred understanding of botanical spices, wet-stone grind cycles, and wood fires with contemporary dining elegance.
+          </p>
+
+          <div class="row g-4 mt-2">
+            <div class="col-sm-6">
+              <div style="border-left:3px solid var(--color-gold); padding-left:1rem;">
+                <h5 style="color:var(--color-gold); margin-bottom:0.25rem;">Micro-Fermentation</h5>
+                <p style="font-size:0.88rem; color:rgba(250,246,238,0.7); margin:0;">Each batter undergoes controlled cellar fermentation to maximize bioavailability and digestive lightness.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div style="border-left:3px solid var(--color-terracotta); padding-left:1rem;">
+                <h5 style="color:var(--color-terracotta-light); margin-bottom:0.25rem;">Direct Forest Sourcing</h5>
+                <p style="font-size:0.88rem; color:rgba(250,246,238,0.7); margin:0;">Mustard seeds, fenugreek, and asafoetida harvested from biodynamic farms across the Western Ghats.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 3: Special Breakfast Combos & Tasting Flights
+       ======================================================================== -->
+  <section class="section-spacing bg-surface-secondary">
+    <div class="annapoorna-container">
+      <div class="section-header">
+        <span class="section-badge badge-gold">Experiential Flights</span>
+        <h2 class="section-title">Curated Breakfast & Twilight Flights</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+        <p class="section-subtitle">Multi-course curated combinations paired with artisanal herbal decoctions and brass filter brews.</p>
+      </div>
+
+      <div class="tasting-flights-grid">
+        <!-- Flight 1 -->
+        <div class="tasting-flight-card">
+          <span style="font-family:var(--font-nav); font-size:0.8rem; font-weight:700; color:var(--color-gold); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.5rem;">Flight No. 01</span>
+          <h3 style="color:#FFFFFF; font-size:1.8rem; margin-bottom:0.75rem;">The Madras Heritage Flight</h3>
+          <p style="font-size:0.9rem; color:rgba(250,246,238,0.75); margin-bottom:1.5rem;">An essential introduction to Mylapore breakfast rituals.</p>
+          
+          <div style="margin-bottom:1.5rem;">
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 1: Steamed Kanchipuram Idli</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Podi Dusted</span>
+            </div>
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 2: Golden Mini Medu Vada</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Sambar Dip</span>
+            </div>
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 3: Ghee Paper Roast</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Trio Chutney</span>
+            </div>
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 4: Kumbakonam Degree Coffee</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Brass Tumbler</span>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.1);">
+            <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:var(--color-gold);">₹380 <span style="font-size:0.85rem; font-weight:400; color:rgba(250,246,238,0.6);">/ guest</span></div>
+            <button class="btn-annapoorna btn-outline-gold btn-sm open-reservation-modal">Order Flight</button>
+          </div>
+        </div>
+
+        <!-- Flight 2 (Featured) -->
+        <div class="tasting-flight-card" style="border-color:var(--color-gold); background: #182720; box-shadow:0 12px 35px rgba(0,0,0,0.6);">
+          <div class="pricing-ribbon">Most Requested</div>
+          <span style="font-family:var(--font-nav); font-size:0.8rem; font-weight:700; color:var(--color-gold); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.5rem;">Flight No. 02</span>
+          <h3 style="color:#FFFFFF; font-size:1.8rem; margin-bottom:0.75rem;">Royal Mysore Degustation</h3>
+          <p style="font-size:0.9rem; color:rgba(250,246,238,0.75); margin-bottom:1.5rem;">Rich flavors of the Wodeyar royal palaces.</p>
+          
+          <div style="margin-bottom:1.5rem;">
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 1: Mysore Bonda & Ginger Chutney</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Crisp Puff</span>
+            </div>
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 2: Mysore Masala Roast Dosa</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Red Chilly Paste</span>
+            </div>
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 3: Saffron Rava Kesari</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Cashew Butter</span>
+            </div>
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 4: Cold Spiced Badam Milk</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Silver Katori</span>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.1);">
+            <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:var(--color-gold);">₹490 <span style="font-size:0.85rem; font-weight:400; color:rgba(250,246,238,0.6);">/ guest</span></div>
+            <button class="btn-annapoorna btn-primary-gold btn-sm open-reservation-modal">Order Flight</button>
+          </div>
+        </div>
+
+        <!-- Flight 3 -->
+        <div class="tasting-flight-card">
+          <span style="font-family:var(--font-nav); font-size:0.8rem; font-weight:700; color:var(--color-gold); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.5rem;">Flight No. 03</span>
+          <h3 style="color:#FFFFFF; font-size:1.8rem; margin-bottom:0.75rem;">The Chettinad Spice Odyssey</h3>
+          <p style="font-size:0.9rem; color:rgba(250,246,238,0.75); margin-bottom:1.5rem;">Bold peppercorn infusions and stone-ground spices.</p>
+          
+          <div style="margin-bottom:1.5rem;">
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 1: Kuzhi Paniyaram Crisps</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Kara Chutney</span>
+            </div>
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 2: Pepper Mushroom Dosa</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Cast Iron Griddled</span>
+            </div>
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 3: Piping Hot Rasam Shot</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Crushed Pepper</span>
+            </div>
+            <div class="tasting-course-item">
+              <span style="color:#FFFFFF;">Course 4: Sukku Malli Herbal Coffee</span>
+              <span style="color:var(--color-gold); font-size:0.85rem;">Jaggery Brew</span>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.1);">
+            <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:var(--color-gold);">₹420 <span style="font-size:0.85rem; font-weight:400; color:rgba(250,246,238,0.6);">/ guest</span></div>
+            <button class="btn-annapoorna btn-outline-gold btn-sm open-reservation-modal">Order Flight</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4: Contemporary Reviews
+       ======================================================================== -->
+  <section class="section-spacing bg-surface">
+    <div class="annapoorna-container">
+      <div class="section-header">
+        <span class="section-badge">Critique & Acclaim</span>
+        <h2 class="section-title">What Connoisseurs Say</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Taste of South Atelier proves that vegetarian South Indian cuisine belongs among the great culinary traditions of the world. The Truffle Ghee Podi Roast is extraordinary."</p>
+          <div class="testimonial-reviewer">
+            <img src="assets/images/Chellappa Swamy.jpg" alt="Gaurav Mehta" class="reviewer-avatar">
+            <div>
+              <div class="reviewer-name">Gaurav Mehta</div>
+              <div class="reviewer-role">Senior Editor, Epicure Magazine</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Atmosphere is moody, warm, and sophisticated with brass accents. Perfect for private dinners where traditional taste is non-negotiable."</p>
+          <div class="testimonial-reviewer">
+            <img src="assets/images/Chef Sadasivam.jpg" alt="Sunita Nambiar" class="reviewer-avatar">
+            <div>
+              <div class="reviewer-name">Sunita Nambiar</div>
+              <div class="reviewer-role">Architect & Design Critic</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"The filter coffee flight changed everything I knew about Indian coffee roasting. The nitro cold brew retains the chicory aroma with unprecedented velvet foam."</p>
+          <div class="testimonial-reviewer">
+            <img src="assets/images/Natarajan Iyer.jpg" alt="Arjun Kapoor" class="reviewer-avatar">
+            <div>
+              <div class="reviewer-name">Arjun Kapoor</div>
+              <div class="reviewer-role">Artisanal Coffee Roaster</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5: Reservation Call-To-Action Banner
+       ======================================================================== -->
+  <section class="section-spacing bg-forest text-center" style="position:relative; overflow:hidden;">
+    <div class="annapoorna-container" style="position:relative; z-index:2;">
+      <div style="max-width:780px; margin-inline:auto;">
+        <span class="section-badge badge-gold" style="background:rgba(233,168,37,0.2); color:#fff; border-color:var(--color-gold);">An Evening of Fine Dining</span>
+        <h2 style="color:#FFFFFF; font-size:clamp(2.2rem, 4vw, 3.4rem); margin-block:1rem 1.25rem;">Secure Your Table at the Atelier</h2>
+        <p style="color:rgba(250,246,238,0.85); font-size:1.15rem; margin-bottom:2.25rem;">
+          We accommodate limited table seatings each evening to guarantee attentive hospitality and individual tawa preparation by our Master Chefs.
+        </p>
+        <button class="btn-annapoorna btn-primary-gold btn-lg open-reservation-modal">
+          Book Your Tasting Table Now
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+      <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="annapoorna-footer">
+    <div class="annapoorna-container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom:1.25rem;">
+            <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" style="height:54px;">
+          </a>
+          <p style="font-size:0.92rem; line-height:1.7; margin-bottom:1.5rem;">
+            Preserving South India's golden heritage since 1968. Authentic stone-ground tiffin, hand-crafted degree filter coffee, and traditional wedding feasts.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation & Explore (Exact Navbar Names) -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1 – Traditional</a></li>
+            <li><a href="home-2.html">Home 2 – Modern Dining</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (5 Core Offerings) -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-restaurant-dining.html">Restaurant Dining</a></li>
+            <li><a href="service-breakfast-specials.html">Breakfast Specials</a></li>
+            <li><a href="service-corporate-catering.html">Corporate Catering</a></li>
+            <li><a href="service-wedding-catering.html">Wedding Catering</a></li>
+            <li><a href="service-family-dining.html">Family Dining</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Timings & Contact -->
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="footer-timings-table">
+            <div class="timing-row">
+              <span>Morning Tiffin:</span>
+              <strong style="color:var(--color-gold);">6:30 AM – 11:30 AM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Afternoon Meals:</span>
+              <strong style="color:var(--color-gold);">12:00 PM – 3:30 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Evening Snacks:</span>
+              <strong style="color:var(--color-gold);">4:30 PM – 7:00 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Dinner Tiffin:</span>
+              <strong style="color:var(--color-gold);">7:00 PM – 10:30 PM</strong>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem; font-size:0.9rem;">
+            <p style="margin:0 0 0.4rem; color:rgba(250,246,238,0.9);">
+              <strong>Heritage Restaurant:</strong><br>
+              42 South Mada Street, Mylapore, Chennai, TN 600004
+            </p>
+            <p style="margin:0; color:var(--color-gold-light);">
+              Phone: +91 44 2847 1968
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Taste of South. All rights reserved. 
+        </div>
+        <div class="social-links footer-social-links" style="margin-top:0;">
+          <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" title="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" title="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" title="Watch our Kitchen Stories on YouTube" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="https://twitter.com" class="social-icon-btn" aria-label="X (Twitter)" title="Follow us on X" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+          </a>
+          <a href="https://tripadvisor.com" class="social-icon-btn" aria-label="TripAdvisor" title="Review us on TripAdvisor" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/><line x1="12" y1="9" x2="12" y2="15"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Table Reservation Modal -->
+  <div id="reservationModal" class="reservation-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="reservation-modal-card">
+      <button id="closeReservationModal" class="modal-close-btn">&times;</button>
+      <div style="text-align:center; margin-bottom:1.5rem;">
+        <span class="section-badge badge-gold">VIP Reservation</span>
+        <h3 style="font-size:2rem; margin-bottom:0.25rem;">Table at Taste of South Atelier</h3>
+        <p style="font-size:0.92rem; margin:0;">Please reserve at least 2 hours in advance for fine dining seatings.</p>
+      </div>
+
+      <form action="https://formsubmit.co/annapoorna.chennai@gmail.com" method="POST" data-formsubmit>
+        <input type="hidden" name="_subject" value="Modern Dining Table Booking">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Guest Name *</label>
+              <input type="text" name="name" class="form-control-custom" placeholder="e.g. Ananya Rao" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" name="phone" class="form-control-custom" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Email Address *</label>
+              <input type="email" name="email" class="form-control-custom" placeholder="ananya@example.com" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Party Size *</label>
+              <select name="guests" class="form-control-custom" required>
+                <option value="2 Guests">2 Guests (Intimate Table)</option>
+                <option value="4 Guests">4 Guests (Dining Booth)</option>
+                <option value="6 Guests">6 Guests</option>
+                <option value="Chef Tasting Table (8+)">Chef's Tasting Table (8+ Guests)</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Reservation Date *</label>
+              <input type="date" name="date" class="form-control-custom" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Service Time *</label>
+              <select name="session" class="form-control-custom" required>
+                <option>Lunch Service (12:30 PM - 3:00 PM)</option>
+                <option>Twilight Tasting (6:30 PM - 8:30 PM)</option>
+                <option>Late Dinner (8:45 PM - 11:00 PM)</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group mb-3">
+              <label class="form-label">Dietary Preferences / Notes</label>
+              <textarea name="notes" class="form-control-custom" placeholder="e.g. Jain preparation without onion/garlic, or celebrating an anniversary" rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-annapoorna btn-primary-gold w-100 btn-lg">Confirm Tasting Reservation</button>
+        <div class="form-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Scroll to Top" title="Back to Top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu-filter.js"></script>
+</body>
+</html>

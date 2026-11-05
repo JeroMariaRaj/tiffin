@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded Brand Background -->
+  <rect width="64" height="64" rx="16" fill="#1B4332" />
+  <rect x="2" y="2" width="60" height="60" rx="14" stroke="#D48B12" stroke-width="1.5" stroke-opacity="0.6" fill="none" />
+  
+  <!-- Subtle Glow -->
+  <circle cx="32" cy="25" r="16" fill="#E9A825" fill-opacity="0.18" />
+
+  <!-- Diya Stand & Base -->
+  <g transform="translate(0, 2)">
+    <!-- Base -->
+    <path d="M22 50 C26 52 38 52 42 50 L40 53 C35 55 29 55 24 53 Z" fill="#D48B12" />
+    <path d="M25 47 C28 48 36 48 39 47 L40 49 C36 51 28 51 24 49 Z" fill="#E9A825" />
+    <!-- Pillar -->
+    <path d="M30 38 L34 38 L35 47 L29 47 Z" fill="#C85A32" />
+    <circle cx="32" cy="37" r="3" fill="#D48B12" />
+    <!-- Diya Bowl -->
+    <path d="M18 32 C18 39 46 39 46 32 C43 31 21 31 18 32 Z" fill="#E9A825" />
+    <ellipse cx="32" cy="31" rx="14" ry="3.5" fill="#D48B12" />
+    <ellipse cx="32" cy="30" rx="11" ry="2" fill="#FAF6EE" opacity="0.7" />
+    <!-- Sacred Flame -->
+    <path d="M32 12 C28 20 26 24 28 28 C30 30 34 30 36 28 C38 24 36 20 32 12 Z" fill="url(#favFlameGrad)" />
+    <path d="M32 17 C30 21 29 23 30 25 C31 27 33 27 34 25 C35 23 34 21 32 17 Z" fill="#FFFBE6" />
+    <circle cx="32" cy="22" r="1.5" fill="#FFFFFF" />
+  </g>
+
+  <defs>
+    <linearGradient id="favFlameGrad" x1="32" y1="12" x2="32" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFF48F" />
+      <stop offset="35%" stop-color="#FF9E1B" />
+      <stop offset="100%" stop-color="#C85A32" />
+    </linearGradient>
+  </defs>
+</svg>

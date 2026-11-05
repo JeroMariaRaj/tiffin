@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Dining Experience | Taste of South</title>
+  <meta name="description" content="Experience authentic South Indian restaurant dining with traditional banana leaf service, live iron tawas, and fragrant coffee in Mylapore, Chennai.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header -->
+  <header class="annapoorna-header">
+    <div class="annapoorna-container">
+      <div class="nav-container">
+        <a href="index.html" class="brand-logo" aria-label="Taste of South Home">
+          <img src="assets/images/logo.svg" alt="Taste of South - South Indian Kitchen" class="logo-light-mode">
+          <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" class="logo-dark-mode">
+        </a>
+        <nav class="desktop-nav">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">Home <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <div class="dropdown-menu-custom">
+              <a href="index.html" class="dropdown-link">Home 1 – Traditional Landing</a>
+              <a href="home-2.html" class="dropdown-link">Home 2 – Modern Dining</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="about.html" class="nav-link">About Us</a></div>
+          <div class="nav-item"><a href="menu.html" class="nav-link">Menu</a></div>
+          <div class="nav-item">
+            <a href="services.html" class="nav-link active">Services <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <div class="dropdown-menu-custom">
+              <a href="services.html" class="dropdown-link">All Services Overview</a>
+              <a href="service-restaurant-dining.html" class="dropdown-link">1. Restaurant Dining</a>
+              <a href="service-breakfast-specials.html" class="dropdown-link">2. Breakfast Specials</a>
+              <a href="service-corporate-catering.html" class="dropdown-link">3. Corporate Catering</a>
+              <a href="service-wedding-catering.html" class="dropdown-link">4. Wedding Catering</a>
+              <a href="service-family-dining.html" class="dropdown-link">5. Family Dining</a>
+              <a href="service-takeaway-services.html" class="dropdown-link">6. Takeaway Services</a>
+              <a href="service-special-orders.html" class="dropdown-link">7. Special Food Orders</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="blog.html" class="nav-link">Blog <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <div class="dropdown-menu-custom">
+              <a href="blog.html" class="dropdown-link">All Articles</a>
+              <a href="blog-crispy-dosa-secrets.html" class="dropdown-link">Secrets of Crispy Dosa</a>
+              <a href="blog-filter-coffee-culture.html" class="dropdown-link">Filter Coffee Culture</a>
+              <a href="blog-health-benefits-idli.html" class="dropdown-link">Health Benefits of Idli</a>
+              <a href="blog-traditional-cooking-methods.html" class="dropdown-link">Soapstone Cooking Methods</a>
+              <a href="blog-fresh-spices-western-ghats.html" class="dropdown-link">Western Ghats Spices</a>
+              <a href="blog-breakfast-recipes-tradition.html" class="dropdown-link">Timeless Breakfast Rituals</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></div>
+          <div class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></div>
+        </nav>
+        <div class="header-actions">
+          <button id="themeToggleBtn" class="control-btn" aria-label="Toggle Theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+          <button id="rtlToggleBtn" class="control-btn" aria-label="Toggle RTL">RTL</button>
+          
+                    <button class="btn-annapoorna btn-primary-gold open-reservation-modal nav-reservation-cta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Book a Table</button>
+          <button class="mobile-menu-toggle" aria-label="Open Mobile Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/logo.svg" alt="Taste of South" style="height: 42px;">
+      <button class="mobile-drawer-close" style="background:none; border:none; font-size:1.8rem; cursor:pointer;">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home 1 – Traditional</a></li>
+      <li class="mobile-nav-item"><a href="home-2.html" class="mobile-nav-link">Home 2 – Modern Dining</a></li>
+      <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li class="mobile-nav-item"><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+      <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li class="mobile-nav-item"><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+      <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+      <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <button class="btn-annapoorna btn-primary-gold open-reservation-modal w-100 mt-auto">Book a Table</button>
+  </aside>
+
+  <!-- Service Banner -->
+  <div class="page-banner">
+    <div class="page-banner-bg" style="background-image: url('assets/images/Traditional Restaurant Dining.jpg');"></div>
+    <div class="page-banner-content">
+      <h1>Traditional Restaurant Dining</h1>
+      <p class="page-banner-subtitle">The authentic Mylapore dining hall with aromatic banana leaf service.</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <section class="section-spacing bg-surface">
+    <div class="annapoorna-container">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <img src="assets/images/Traditional Restaurant Dining.jpg" alt="Restaurant Interior" style="width:100%; height:440px; object-fit:cover; border-radius:var(--radius-lg); margin-bottom:2rem; border:2px solid var(--border-light);">
+
+          <span class="section-badge badge-gold">Service Overview</span>
+          <h2>A Heritage Dining Sanctuary in Mylapore</h2>
+          <div class="section-divider" style="justify-content: flex-start;"><div class="line"></div><div class="flower-dot"></div><div class="line reverse"></div></div>
+
+          <p class="lead" style="color:var(--text-main); font-weight:500;">
+            Dining at TASTE OF SOUTH is more than a meal; it is an unhurried cultural immersion into the warmth, sounds, and aromas of South Indian culinary life.
+          </p>
+          <p>
+            From the moment you step through our teakwood portal, you are greeted with the fragrance of fresh jasmine, the rhythmic metallic clink of coffee davarahs, and the gentle hiss of seasoned cast iron tawas. We seat guests on hand-carved Chettinad benches and solid rosewood tables.
+          </p>
+          <p>
+            Every afternoon, our lunch session transforms the hall into a grand temple feast. Fresh green banana leaves are laid before each guest, splashed with pure water, and layered with 14 hot delicacies served directly from smoking stainless-steel buckets with infinite generosity.
+          </p>
+
+          <h3 class="mt-5 mb-3">Dining Features & Highlights</h3>
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <div style="background:var(--bg-surface-secondary); padding:1.25rem; border-radius:var(--radius-sm); border:1px solid var(--border-light);">
+                <h5 style="color:var(--color-terracotta); margin-bottom:0.25rem;">Live Iron Tawa Station</h5>
+                <p style="font-size:0.88rem; margin:0;">Watch our Tiffin Masters toss crisp paper roasts and cone dosas over blazing blue hearth fires.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div style="background:var(--bg-surface-secondary); padding:1.25rem; border-radius:var(--radius-sm); border:1px solid var(--border-light);">
+                <h5 style="color:var(--color-terracotta); margin-bottom:0.25rem;">Whole Banana Leaf Service</h5>
+                <p style="font-size:0.88rem; margin:0;">Eco-friendly, natural polyphenol-rich plantain leaves cleaned and laid fresh for every guest.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div style="background:var(--bg-surface-secondary); padding:1.25rem; border-radius:var(--radius-sm); border:1px solid var(--border-light);">
+                <h5 style="color:var(--color-terracotta); margin-bottom:0.25rem;">Heirloom Brass Tableware</h5>
+                <p style="font-size:0.88rem; margin:0;">Coffee and desserts served in heavy artisan brass katoris and Davarah-tumblers.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div style="background:var(--bg-surface-secondary); padding:1.25rem; border-radius:var(--radius-sm); border:1px solid var(--border-light);">
+                <h5 style="color:var(--color-terracotta); margin-bottom:0.25rem;">Courtyard & AC Chambers</h5>
+                <p style="font-size:0.88rem; margin:0;">Choose between our breezy sun-dappled courtyard veranda or temperature-controlled halls.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="mt-5 mb-3">Frequently Asked Questions</h3>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item mb-2" style="background:var(--bg-surface-secondary); border:1px solid var(--border-light); border-radius:8px;">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Do we need a table reservation for morning breakfast?</button></h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body" style="font-size:0.92rem;">Morning tiffin (6:30 AM – 11:30 AM) operates on a walk-in basis with brief turnaround times. For parties of 6 or more, advance reservation is recommended.</div></div>
+            </div>
+            <div class="accordion-item mb-2" style="background:var(--bg-surface-secondary); border:1px solid var(--border-light); border-radius:8px;">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Is all food 100% vegetarian?</button></h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body" style="font-size:0.92rem;">Yes, TASTE OF SOUTH is strictly 100% pure vegetarian. We also offer Jain preparations without onion and garlic on request.</div></div>
+            </div>
+          </div>
+
+          <!-- Related Services -->
+          <div class="mt-5 pt-4" style="border-top:1px solid var(--border-light);">
+            <h4>Related Services</h4>
+            <div class="row g-3 mt-1">
+              <div class="col-md-6">
+                <a href="service-breakfast-specials.html" style="display:block; background:var(--bg-surface-secondary); padding:1rem; border-radius:8px; border:1px solid var(--border-light);">
+                  <strong style="color:var(--text-heading);">Breakfast Specials &rarr;</strong>
+                  <p style="font-size:0.85rem; margin:0; color:var(--text-muted);">Explore our early morning tiffin delicacies.</p>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="service-family-dining.html" style="display:block; background:var(--bg-surface-secondary); padding:1rem; border-radius:8px; border:1px solid var(--border-light);">
+                  <strong style="color:var(--text-heading);">Family Dining Feasts &rarr;</strong>
+                  <p style="font-size:0.85rem; margin:0; color:var(--text-muted);">Private chambers for milestone celebrations.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar / Enquiry Form -->
+        <div class="col-lg-4">
+          <div style="background:var(--bg-surface-secondary); border:2px solid var(--color-gold); border-radius:var(--radius-lg); padding:2rem; position:sticky; top:100px;">
+            <span class="section-badge badge-gold" style="margin-bottom:0.5rem;">Quick Booking</span>
+            <h3 style="font-size:1.6rem; margin-bottom:0.25rem;">Reserve A Dining Table</h3>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.5rem;">Join us for an authentic dining experience.</p>
+
+            <form action="https://formsubmit.co/annapoorna.chennai@gmail.com" method="POST" data-formsubmit>
+              <input type="hidden" name="_subject" value="Restaurant Dining Table Inquiry">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="form-group mb-2">
+                <label class="form-label" style="font-size:0.82rem;">Your Name *</label>
+                <input type="text" name="name" class="form-control-custom" placeholder="Full Name" required>
+              </div>
+              <div class="form-group mb-2">
+                <label class="form-label" style="font-size:0.82rem;">Phone Number *</label>
+                <input type="tel" name="phone" class="form-control-custom" placeholder="+91 98765 43210" required>
+              </div>
+              <div class="form-group mb-2">
+                <label class="form-label" style="font-size:0.82rem;">Number of Guests *</label>
+                <select name="guests" class="form-control-custom" required>
+                  <option>2 Guests</option>
+                  <option>4 Guests</option>
+                  <option>6 Guests</option>
+                  <option>8+ Large Family</option>
+                </select>
+              </div>
+              <div class="form-group mb-2">
+                <label class="form-label" style="font-size:0.82rem;">Date *</label>
+                <input type="date" name="date" class="form-control-custom" required>
+              </div>
+              <div class="form-group mb-3">
+                <label class="form-label" style="font-size:0.82rem;">Meal Session *</label>
+                <select name="session" class="form-control-custom" required>
+                  <option>Breakfast Tiffin (6:30 AM - 11:30 AM)</option>
+                  <option>Banana Leaf Lunch (12:00 PM - 3:30 PM)</option>
+                  <option>Dinner Tiffin (6:30 PM - 10:30 PM)</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-annapoorna btn-primary-gold w-100">Reserve Now</button>
+              <div class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+      <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="annapoorna-footer">
+    <div class="annapoorna-container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom:1.25rem;">
+            <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" style="height:54px;">
+          </a>
+          <p style="font-size:0.92rem; line-height:1.7; margin-bottom:1.5rem;">
+            Preserving South India's golden heritage since 1968. Authentic stone-ground tiffin, hand-crafted degree filter coffee, and traditional wedding feasts.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation & Explore (Exact Navbar Names) -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1 – Traditional</a></li>
+            <li><a href="home-2.html">Home 2 – Modern Dining</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (5 Core Offerings) -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-restaurant-dining.html">Restaurant Dining</a></li>
+            <li><a href="service-breakfast-specials.html">Breakfast Specials</a></li>
+            <li><a href="service-corporate-catering.html">Corporate Catering</a></li>
+            <li><a href="service-wedding-catering.html">Wedding Catering</a></li>
+            <li><a href="service-family-dining.html">Family Dining</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Timings & Contact -->
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="footer-timings-table">
+            <div class="timing-row">
+              <span>Morning Tiffin:</span>
+              <strong style="color:var(--color-gold);">6:30 AM – 11:30 AM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Afternoon Meals:</span>
+              <strong style="color:var(--color-gold);">12:00 PM – 3:30 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Evening Snacks:</span>
+              <strong style="color:var(--color-gold);">4:30 PM – 7:00 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Dinner Tiffin:</span>
+              <strong style="color:var(--color-gold);">7:00 PM – 10:30 PM</strong>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem; font-size:0.9rem;">
+            <p style="margin:0 0 0.4rem; color:rgba(250,246,238,0.9);">
+              <strong>Heritage Restaurant:</strong><br>
+              42 South Mada Street, Mylapore, Chennai, TN 600004
+            </p>
+            <p style="margin:0; color:var(--color-gold-light);">
+              Phone: +91 44 2847 1968
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Taste of South. All rights reserved. 
+        </div>
+        <div class="social-links footer-social-links" style="margin-top:0;">
+          <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" title="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" title="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" title="Watch our Kitchen Stories on YouTube" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="https://twitter.com" class="social-icon-btn" aria-label="X (Twitter)" title="Follow us on X" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+          </a>
+          <a href="https://tripadvisor.com" class="social-icon-btn" aria-label="TripAdvisor" title="Review us on TripAdvisor" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/><line x1="12" y1="9" x2="12" y2="15"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTopBtn" class="back-to-top" aria-label="Scroll to Top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- ========================================================================
+       GLOBAL MODAL: Table Reservation (Working FormSubmit)
+       ======================================================================== -->
+  <div id="reservationModal" class="reservation-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="reservation-modal-card">
+      <button id="closeReservationModal" class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      <div style="text-align:center; margin-bottom:1.5rem;">
+        <span class="section-badge badge-gold">Reservation</span>
+        <h3 id="modalTitle" style="font-size:2rem; margin-bottom:0.25rem;">Reserve Your Table</h3>
+        <p style="font-size:0.92rem; margin:0;">Experience traditional hospitality. We hold reservations for 15 minutes.</p>
+      </div>
+
+      <form action="https://formsubmit.co/annapoorna.chennai@gmail.com" method="POST" data-formsubmit>
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="New Table Reservation – Taste of South Restaurant">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control-custom" placeholder="e.g. Ramesh Kumar" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" name="phone" class="form-control-custom" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Email Address *</label>
+              <input type="email" name="email" class="form-control-custom" placeholder="ramesh@example.com" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Number of Guests *</label>
+              <select name="guests" class="form-control-custom" required>
+                <option value="1 Guest">1 Guest</option>
+                <option value="2 Guests" selected>2 Guests</option>
+                <option value="4 Guests">4 Guests</option>
+                <option value="6 Guests">6 Guests</option>
+                <option value="8+ Large Family">8+ Large Family</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Reservation Date *</label>
+              <input type="date" name="date" class="form-control-custom" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label class="form-label">Meal Session *</label>
+              <select name="session" class="form-control-custom" required>
+                <option value="Morning Tiffin (7:30 AM - 10:30 AM)">Morning Tiffin (7:30 AM - 10:30 AM)</option>
+                <option value="Traditional Lunch (12:30 PM - 3:00 PM)">Traditional Lunch (12:30 PM - 3:00 PM)</option>
+                <option value="Evening Snacks (5:00 PM - 7:00 PM)">Evening Snacks (5:00 PM - 7:00 PM)</option>
+                <option value="Dinner Tiffin (7:30 PM - 10:00 PM)">Dinner Tiffin (7:30 PM - 10:00 PM)</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group mb-3">
+              <label class="form-label">Special Requests / Seating Preference</label>
+              <textarea name="notes" class="form-control-custom" placeholder="e.g. Traditional floor banana leaf seating or quiet veranda table" rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-annapoorna btn-primary-gold w-100 btn-lg">Confirm Table Reservation</button>
+        <div class="form-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

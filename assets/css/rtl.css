@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Taste of South – South Indian Kitchen
+   Right-to-Left (RTL) Layout Overrides
+   Activated when [dir="rtl"] is applied to <html>
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-body), 'Cairo', 'Tajawal', sans-serif;
+}
+
+/* Header & Navigation RTL */
+[dir="rtl"] .top-bar-inner {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .desktop-nav {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .nav-link::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .dropdown-menu-custom {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
+[dir="rtl"] .dropdown-link:hover {
+  padding-left: 1.25rem;
+  padding-right: 1.5rem;
+}
+
+/* Mobile Drawer RTL */
+[dir="rtl"] .mobile-nav-drawer {
+  right: auto;
+  left: -320px;
+  transition: left var(--transition-normal);
+}
+
+[dir="rtl"] .mobile-nav-drawer.active {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] .mobile-dropdown {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* Badges & Ribbons */
+[dir="rtl"] .badge-bestseller,
+[dir="rtl"] .badge-chef-special {
+  left: auto;
+  right: 14px;
+}
+
+[dir="rtl"] .blog-category-tag {
+  left: auto;
+  right: 14px;
+}
+
+[dir="rtl"] .pricing-ribbon {
+  right: auto;
+  left: 24px;
+}
+
+/* Search Box RTL */
+[dir="rtl"] .menu-search-input {
+  padding: 0.6rem 2.5rem 0.6rem 1rem;
+}
+
+[dir="rtl"] .menu-search-icon {
+  left: auto;
+  right: 0.9rem;
+}
+
+/* Heritage Badges RTL */
+[dir="rtl"] .heritage-badge-box {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .floating-chef-quote {
+  left: auto;
+  right: 20px;
+}
+
+/* Testimonial & Author elements */
+[dir="rtl"] .testimonial-stars {
+  justify-content: flex-start;
+}
+
+/* Footer Links RTL */
+[dir="rtl"] .footer-links-list a:hover {
+  transform: translateX(-4px);
+}
+
+[dir="rtl"] .footer-col h4::after {
+  left: auto;
+  right: 0;
+}
+
+/* Modal Close Button */
+[dir="rtl"] .modal-close-btn {
+  right: auto;
+  left: 1.25rem;
+}
+
+/* Back to Top RTL */
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 30px;
+}
+
+/* Directional Arrow icons flip */
+[dir="rtl"] .arrow-flip {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .btn-annapoorna svg {
+  transform: scaleX(-1);
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services & Catering Offerings | Taste of South</title>
+  <meta name="description" content="Discover our culinary services: Dine-in, Wedding Kalyana Sapadu catering, Corporate lunch boxes, Family feasts, and Festival sweet orders.">
+  <meta name="keywords" content="South Indian Catering, Wedding Catering, Corporate Tiffin, Taste of South Services, Mylapore Dining">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header -->
+  <header class="annapoorna-header">
+    <div class="annapoorna-container">
+      <div class="nav-container">
+        <a href="index.html" class="brand-logo" aria-label="Taste of South Home">
+          <img src="assets/images/logo.svg" alt="Taste of South - South Indian Kitchen" class="logo-light-mode">
+          <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" class="logo-dark-mode">
+        </a>
+
+        <nav class="desktop-nav">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="index.html" class="dropdown-link">Home 1 – Traditional Landing</a>
+              <a href="home-2.html" class="dropdown-link">Home 2 – Modern Dining</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="about.html" class="nav-link">About Us</a></div>
+          <div class="nav-item"><a href="menu.html" class="nav-link">Menu</a></div>
+          <div class="nav-item">
+            <a href="services.html" class="nav-link active">
+              Services
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="services.html" class="dropdown-link">All Services Overview</a>
+              <a href="service-restaurant-dining.html" class="dropdown-link">1. Restaurant Dining</a>
+              <a href="service-breakfast-specials.html" class="dropdown-link">2. Breakfast Specials</a>
+              <a href="service-corporate-catering.html" class="dropdown-link">3. Corporate Catering</a>
+              <a href="service-wedding-catering.html" class="dropdown-link">4. Wedding Catering</a>
+              <a href="service-family-dining.html" class="dropdown-link">5. Family Dining</a>
+              <a href="service-takeaway-services.html" class="dropdown-link">6. Takeaway Services</a>
+              <a href="service-special-orders.html" class="dropdown-link">7. Special Food Orders</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="blog.html" class="nav-link">
+              Blog
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="blog.html" class="dropdown-link">All Articles</a>
+              <a href="blog-crispy-dosa-secrets.html" class="dropdown-link">Secrets of Crispy Dosa</a>
+              <a href="blog-filter-coffee-culture.html" class="dropdown-link">Filter Coffee Culture</a>
+              <a href="blog-health-benefits-idli.html" class="dropdown-link">Health Benefits of Idli</a>
+              <a href="blog-traditional-cooking-methods.html" class="dropdown-link">Soapstone Cooking Methods</a>
+              <a href="blog-fresh-spices-western-ghats.html" class="dropdown-link">Western Ghats Spices</a>
+              <a href="blog-breakfast-recipes-tradition.html" class="dropdown-link">Timeless Breakfast Rituals</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></div>
+          <div class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></div>
+        </nav>
+
+        <div class="header-actions">
+          <button id="themeToggleBtn" class="control-btn" aria-label="Toggle Theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+          <button id="rtlToggleBtn" class="control-btn" aria-label="Toggle RTL">RTL</button>
+          
+                    <button class="btn-annapoorna btn-primary-gold open-reservation-modal nav-reservation-cta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Book a Table</button>
+          <button class="mobile-menu-toggle" aria-label="Open Mobile Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/logo.svg" alt="Taste of South" style="height: 42px;">
+      <button class="mobile-drawer-close" style="background:none; border:none; font-size:1.8rem; cursor:pointer;">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home 1 – Traditional</a></li>
+      <li class="mobile-nav-item"><a href="home-2.html" class="mobile-nav-link">Home 2 – Modern Dining</a></li>
+      <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li class="mobile-nav-item"><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+      <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li class="mobile-nav-item"><a href="pricing.html" class="mobile-nav-link">Pricing Packages</a></li>
+      <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+      <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <button class="btn-annapoorna btn-primary-gold open-reservation-modal w-100 mt-auto">Book a Table</button>
+  </aside>
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner">
+    <div class="page-banner-bg" style="background-image: url('assets/images/Traditional Restaurant Dining.jpg');"></div>
+    <div class="page-banner-content">
+      <h1>Culinary Services & Feasts</h1>
+      <p class="page-banner-subtitle">Bringing the warmth of traditional South Indian hospitality to your tables and celebrations.</p>
+    </div>
+  </div>
+
+  <!-- SERVICES OVERVIEW SECTION -->
+  <section class="section-spacing bg-surface-secondary">
+    <div class="annapoorna-container">
+      <div class="section-header">
+        <span class="section-badge badge-gold">Hospitality Spectrum</span>
+        <h2 class="section-title">Our Seven Signature Services</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+        <p class="section-subtitle">Click on any service card below to explore its comprehensive menu offerings, packages, FAQs, and booking details.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1: Restaurant Dining -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="assets/images/Traditional Restaurant Dining.jpg" alt="Restaurant Dining at Taste of South" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3><a href="service-restaurant-dining.html">1. Restaurant Dining</a></h3>
+            <p>Immerse yourself in fragrant jasmine, glowing brass deepams, vintage Chettinad teak woodwork, and the sizzle of live iron tawas in our iconic Mylapore dining rooms.</p>
+            <ul class="service-features-mini">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Traditional banana leaf table service</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Live dosa griddle counter & fresh roasts</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Air-conditioned & courtyard veranda seating</li>
+            </ul>
+            <div class="service-footer">
+              <span style="font-family:var(--font-nav); font-size:0.85rem; color:var(--color-terracotta); font-weight:600;">Daily 6:30 AM – 10:30 PM</span>
+              <a href="service-restaurant-dining.html" class="btn-annapoorna btn-outline-forest btn-sm">Explore Service &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Breakfast Specials -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="assets/images/Morning Breakfast Specials.jpg" alt="South Indian Breakfast Specials" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3><a href="service-breakfast-specials.html">2. Breakfast Specials</a></h3>
+            <p>Our renowned early-morning tiffin ritual. Stone-steamed Thatte idlis, golden crisp Medu vadas, ghee roasted Ven Pongal, and Kumbakonam degree filter coffee.</p>
+            <ul class="service-features-mini">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Freshly ground batter rested for 14 hours</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 4 artisanal homemade chutneys & hot sambar</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Served in authentic brass tableware</li>
+            </ul>
+            <div class="service-footer">
+              <span style="font-family:var(--font-nav); font-size:0.85rem; color:var(--color-terracotta); font-weight:600;">Morning 6:30 – 11:30 AM</span>
+              <a href="service-breakfast-specials.html" class="btn-annapoorna btn-outline-forest btn-sm">Explore Service &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Corporate Catering -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="assets/images/Corporate Catering & Executive Tiffins.jpg" alt="Corporate Tiffin & Catering" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3><a href="service-corporate-catering.html">3. Corporate Catering</a></h3>
+            <p>Premium South Indian executive meal boxes, conference breakfasts, and boardroom tiffin deliveries tailored for corporate events, seminars, and client meetings.</p>
+            <ul class="service-features-mini">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Eco-friendly insulated palm-leaf containers</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Piping hot delivery on schedule across Chennai</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Custom corporate invoicing & bulk packages</li>
+            </ul>
+            <div class="service-footer">
+              <span style="font-family:var(--font-nav); font-size:0.85rem; color:var(--color-terracotta); font-weight:600;">Boxes from ₹195/guest</span>
+              <a href="service-corporate-catering.html" class="btn-annapoorna btn-outline-forest btn-sm">Explore Service &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Wedding Catering -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="assets/images/Traditional Kalyana Sapadu & Wedding Banquets.jpg" alt="Traditional Wedding Kalyana Sapadu" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3><a href="service-wedding-catering.html">4. Wedding Catering</a></h3>
+            <p>The crown jewel of Southern celebrations: 32-course authentic Kalyana Sapadu served on whole raw plantain leaves with traditional pattu-clad servers.</p>
+            <ul class="service-features-mini">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Complete muhurtham tiffin & reception banquets</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Live filter coffee stalls & hot jalebi counters</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dedicated wedding culinary supervisor</li>
+            </ul>
+            <div class="service-footer">
+              <span style="font-family:var(--font-nav); font-size:0.85rem; color:var(--color-terracotta); font-weight:600;">200 to 2,500+ Guests</span>
+              <a href="service-wedding-catering.html" class="btn-annapoorna btn-outline-forest btn-sm">Explore Service &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: Family Dining -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="assets/images/Family Celebrations & Private Dining.jpg" alt="Family Dining & Celebrations" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3><a href="service-family-dining.html">5. Family Dining</a></h3>
+            <p>Private dining chambers and long family banquet tables designed for Upanayanams, 60th birthdays (Sashtiabdapoorthi), anniversaries, and reunions.</p>
+            <ul class="service-features-mini">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Private rooms accommodating 12 to 60 family guests</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Pre-fixed celebratory thali menus with unlimited refills</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Complimentary sweet dessert platter for milestone hosts</li>
+            </ul>
+            <div class="service-footer">
+              <span style="font-family:var(--font-nav); font-size:0.85rem; color:var(--color-terracotta); font-weight:600;">Pre-bookable Chambers</span>
+              <a href="service-family-dining.html" class="btn-annapoorna btn-outline-forest btn-sm">Explore Service &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: Takeaway Services -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="assets/images/Express Takeaway & Tiffin Delivery.jpg" alt="Express Takeaway Services" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3><a href="service-takeaway-services.html">6. Takeaway Services</a></h3>
+            <p>Quick pickup counters packaging piping hot dosas, crispy vadas, and fresh meal parcels in eco-friendly banana leaves so food stays crisp, warm, and fragrant.</p>
+            <ul class="service-features-mini">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Steam-vented packaging ensuring crispy dosas</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Express counter pickup ready within 12 minutes</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Spill-proof thermal brass flasks for filter coffee</li>
+            </ul>
+            <div class="service-footer">
+              <span style="font-family:var(--font-nav); font-size:0.85rem; color:var(--color-terracotta); font-weight:600;">Express 12-Min Packing</span>
+              <a href="service-takeaway-services.html" class="btn-annapoorna btn-outline-forest btn-sm">Explore Service &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 7: Special Food Orders -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="assets/images/Festival Sweets, Savories & Stone-Ground Batter.jpg" alt="Special Festival Food Orders" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3><a href="service-special-orders.html">7. Special Food Orders</a></h3>
+            <p>Traditional Diwali, Pongal, and Krishna Jayanthi sweets & savories. Kai Murukku, Thattai, Mysore Pak, Seedai, and custom stone-ground idli/dosa batter by the kilo.</p>
+            <ul class="service-features-mini">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 100% pure ghee sweets prepared in small batches</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Handcrafted Kai Murukku twisted by master aunties</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Stone-ground fresh batter tubs for home kitchens</li>
+            </ul>
+            <div class="service-footer">
+              <span style="font-family:var(--font-nav); font-size:0.85rem; color:var(--color-terracotta); font-weight:600;">Festival Pre-Orders Open</span>
+              <a href="service-special-orders.html" class="btn-annapoorna btn-outline-forest btn-sm">Explore Service &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ SECTION: Services & Catering
+       ======================================================================== -->
+  <section class="section-spacing bg-surface-secondary">
+    <div class="annapoorna-container" style="max-width: 860px;">
+      <div class="section-header">
+        <span class="section-badge badge-gold">Service Insights</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <div class="flower-dot"></div>
+          <div class="line reverse"></div>
+        </div>
+        <p class="section-subtitle">Common questions regarding our catering operations, live food stalls, and booking requirements.</p>
+      </div>
+
+      <div class="accordion" id="servicesFaqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingServices1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServices1" aria-expanded="true" aria-controls="collapseServices1">
+              What specialized catering and dining services do you provide?
+            </button>
+          </h2>
+          <div id="collapseServices1" class="accordion-collapse collapse show" aria-labelledby="headingServices1" data-bs-parent="#servicesFaqAccordion">
+            <div class="accordion-body">
+              We offer comprehensive hospitality across five core pillars: Heritage Restaurant Dining in Mylapore, Morning Breakfast & Tiffin Specials, Corporate Executive Tiffin Boxes, Grand Wedding Kalyana Sapadu, and Private Family Celebrations, alongside festival savories and fresh daily batter parcels.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingServices2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServices2" aria-expanded="false" aria-controls="collapseServices2">
+              How far in advance should we reserve wedding catering or large banquets?
+            </button>
+          </h2>
+          <div id="collapseServices2" class="accordion-collapse collapse" aria-labelledby="headingServices2" data-bs-parent="#servicesFaqAccordion">
+            <div class="accordion-body">
+              For auspicious wedding dates (Muhurtham days) and peak festival months, we recommend locking in your date 3 to 6 months in advance. For corporate events, birthday gatherings, and family poojas, 48 to 72 hours advance confirmation is usually sufficient.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingServices3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServices3" aria-expanded="false" aria-controls="collapseServices3">
+              What is included in your live filter coffee and live tiffin counters?
+            </button>
+          </h2>
+          <div id="collapseServices3" class="accordion-collapse collapse" aria-labelledby="headingServices3" data-bs-parent="#servicesFaqAccordion">
+            <div class="accordion-body">
+              Our live stations come fully staffed with master cooks, heavy iron tawas, brass percolators, pure copper samovars, and traditional brass davarah-tumbler service. We provide all burner fuels, eco-friendly areca leaf plates, biodegradable napkins, and dedicated cleaning stewards.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingServices4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServices4" aria-expanded="false" aria-controls="collapseServices4">
+              Do you cater corporate breakfast meetings and IT park meal boxes?
+            </button>
+          </h2>
+          <div id="collapseServices4" class="accordion-collapse collapse" aria-labelledby="headingServices4" data-bs-parent="#servicesFaqAccordion">
+            <div class="accordion-body">
+              Yes! We supply hot executive tiffin boxes and 5-compartment lunch meals in spill-proof, biodegradable containers packed inside thermal insulated carriers. We service all major commercial hubs including OMR, Guindy, Tidel Park, and DLF Porur with guaranteed on-time delivery.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingServices5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServices5" aria-expanded="false" aria-controls="collapseServices5">
+              What hygiene and safety standards do you follow for off-site catering?
+            </button>
+          </h2>
+          <div id="collapseServices5" class="accordion-collapse collapse" aria-labelledby="headingServices5" data-bs-parent="#servicesFaqAccordion">
+            <div class="accordion-body">
+              We are an FSSAI-certified kitchen adhering to rigorous food safety protocols. All cooking and washing utilizes multi-stage reverse-osmosis purified water. Our culinary staff wears food-grade aprons, hairnets, and gloves, and our food transport vehicles are sanitized daily.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+      <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="annapoorna-footer">
+    <div class="annapoorna-container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom:1.25rem;">
+            <img src="assets/images/logo-light.svg" alt="Taste of South - South Indian Kitchen" style="height:54px;">
+          </a>
+          <p style="font-size:0.92rem; line-height:1.7; margin-bottom:1.5rem;">
+            Preserving South India's golden heritage since 1968. Authentic stone-ground tiffin, hand-crafted degree filter coffee, and traditional wedding feasts.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation & Explore (Exact Navbar Names) -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home 1 – Traditional</a></li>
+            <li><a href="home-2.html">Home 2 – Modern Dining</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (5 Core Offerings) -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-restaurant-dining.html">Restaurant Dining</a></li>
+            <li><a href="service-breakfast-specials.html">Breakfast Specials</a></li>
+            <li><a href="service-corporate-catering.html">Corporate Catering</a></li>
+            <li><a href="service-wedding-catering.html">Wedding Catering</a></li>
+            <li><a href="service-family-dining.html">Family Dining</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Timings & Contact -->
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="footer-timings-table">
+            <div class="timing-row">
+              <span>Morning Tiffin:</span>
+              <strong style="color:var(--color-gold);">6:30 AM – 11:30 AM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Afternoon Meals:</span>
+              <strong style="color:var(--color-gold);">12:00 PM – 3:30 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Evening Snacks:</span>
+              <strong style="color:var(--color-gold);">4:30 PM – 7:00 PM</strong>
+            </div>
+            <div class="timing-row">
+              <span>Dinner Tiffin:</span>
+              <strong style="color:var(--color-gold);">7:00 PM – 10:30 PM</strong>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem; font-size:0.9rem;">
+            <p style="margin:0 0 0.4rem; color:rgba(250,246,238,0.9);">
+              <strong>Heritage Restaurant:</strong><br>
+              42 South Mada Street, Mylapore, Chennai, TN 600004
+            </p>
+            <p style="margin:0; color:var(--color-gold-light);">
+              Phone: +91 44 2847 1968
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Taste of South. All rights reserved. 
+        </div>
+        <div class="social-links footer-social-links" style="margin-top:0;">
+          <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" title="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" title="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" title="Watch our Kitchen Stories on YouTube" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="https://twitter.com" class="social-icon-btn" aria-label="X (Twitter)" title="Follow us on X" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+          </a>
+          <a href="https://tripadvisor.com" class="social-icon-btn" aria-label="TripAdvisor" title="Review us on TripAdvisor" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/><line x1="12" y1="9" x2="12" y2="15"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="reservationModal" class="reservation-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="reservation-modal-card">
+      <button id="closeReservationModal" class="modal-close-btn">&times;</button>
+      <div style="text-align:center; margin-bottom:1.5rem;">
+        <span class="section-badge badge-gold">Reservation</span>
+        <h3 style="font-size:2rem; margin-bottom:0.25rem;">Book A Table / Event</h3>
+      </div>
+      <form action="https://formsubmit.co/annapoorna.chennai@gmail.com" method="POST" data-formsubmit>
+        <input type="hidden" name="_subject" value="New Service Booking Request">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="row g-3">
+          <div class="col-md-6"><input type="text" name="name" class="form-control-custom" placeholder="Full Name" required></div>
+          <div class="col-md-6"><input type="tel" name="phone" class="form-control-custom" placeholder="Phone Number" required></div>
+          <div class="col-md-6"><input type="email" name="email" class="form-control-custom" placeholder="Email Address" required></div>
+          <div class="col-md-6">
+            <select name="service" class="form-control-custom" required>
+              <option value="Restaurant Dining">Restaurant Dining</option>
+              <option value="Breakfast Specials">Breakfast Specials</option>
+              <option value="Corporate Catering">Corporate Catering</option>
+              <option value="Wedding Catering">Wedding Catering</option>
+              <option value="Family Dining">Family Dining</option>
+              <option value="Takeaway Services">Takeaway Services</option>
+              <option value="Special Orders">Special Food Orders</option>
+            </select>
+          </div>
+          <div class="col-12"><textarea name="notes" class="form-control-custom" placeholder="Guest count and requirements" rows="2"></textarea></div>
+        </div>
+        <button type="submit" class="btn-annapoorna btn-primary-gold w-100 btn-lg mt-3">Submit Service Inquiry</button>
+        <div class="form-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" aria-label="Scroll to Top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
