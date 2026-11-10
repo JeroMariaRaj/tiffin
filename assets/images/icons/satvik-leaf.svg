@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Sacred fresh banana leaf outline -->
+  <path d="M4 28C6 19 14 8 28 4c0 14-11 22-20 24z"/>
+  <!-- Central spinal leaf vein -->
+  <line x1="4" y1="28" x2="22" y2="10"/>
+  <!-- Side leaflet rib lines -->
+  <path d="M9 23l5-2 M13 19l6-2 M17 15l6-2"/>
+  <!-- Sacred morning dewdrop -->
+  <circle cx="23" cy="8" r="1.5" fill="currentColor"/>
+</svg>

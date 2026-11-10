@@ -141,7 +141,6 @@ body {
   color: var(--text-main);
   line-height: 1.7;
   font-weight: 400;
-  overflow-x: clip;
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
@@ -1234,6 +1233,7 @@ button, input, textarea, select {
 }
 
 .chef-portrait-thumb img {
+  object-fit: cover;
   object-position: center top;
 }
 
@@ -1511,12 +1511,35 @@ button, input, textarea, select {
 
 .feature-card {
   background-color: var(--bg-card);
-  padding: 2.2rem 1.75rem;
+  padding: 1.75rem 1.5rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-light);
   text-align: center;
   transition: all var(--transition-normal);
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card-thumb {
+  height: 150px;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  background-color: var(--bg-surface-secondary);
+}
+
+.feature-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.feature-card:hover .feature-card-thumb img {
+  transform: scale(1.05);
 }
 
 .feature-card:hover {
@@ -1563,7 +1586,13 @@ button, input, textarea, select {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  gap: clamp(2rem, 3vw, 3rem);
+}
+
+@media (min-width: 768px) {
+  .services-grid > .service-card:last-child:nth-child(odd) {
+    grid-column: 2;
+  }
 }
 
 .service-card {
@@ -2252,6 +2281,17 @@ button, input, textarea, select {
   border-color: var(--color-gold);
 }
 
+.related-story-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.related-story-card strong {
+  display: block;
+  min-height: 3.4em;
+}
+
 .page-item.active .page-link {
   background-color: var(--color-gold) !important;
   border-color: var(--color-gold) !important;
@@ -2512,7 +2552,7 @@ textarea.form-control-custom {
    -------------------------------------------------------------------------- */
 .annapoorna-footer {
   background-color: var(--bg-footer);
-  color: rgba(250, 246, 238, 0.85);
+  color: #FAF6EE;
   padding-top: clamp(4rem, 6vw, 6rem);
   border-top: 3px solid var(--color-gold);
   position: relative;
@@ -2523,7 +2563,7 @@ textarea.form-control-custom {
   grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
   gap: clamp(2rem, 4vw, 3.5rem);
   padding-bottom: 3.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer-col h4 {
@@ -2544,18 +2584,51 @@ textarea.form-control-custom {
   background-color: var(--color-terracotta);
 }
 
+.annapoorna-footer .brand-logo {
+  display: inline-flex;
+  padding: 0 !important;
+  margin: 0 0 1.25rem 0 !important;
+}
+
+.annapoorna-footer .brand-logo img {
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-brand-desc,
 .footer-col:first-child > p {
-  padding-left: 1.25rem;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  color: #FFFFFF !important;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.footer-col:first-child .social-links {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 .footer-links-list {
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+.footer-links-list li {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
 }
 
 .footer-links-list a {
-  color: rgba(250, 246, 238, 0.75);
+  color: #FAF6EE;
   font-family: var(--font-nav);
   font-size: 0.92rem;
   transition: all var(--transition-fast);
@@ -2580,34 +2653,91 @@ textarea.form-control-custom {
 .timing-row {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.18);
   padding-bottom: 0.35rem;
+}
+
+.timing-row span {
+  color: #FAF6EE;
+}
+
+.timing-row strong {
+  color: var(--color-gold-light) !important;
+}
+
+.footer-contact-info {
+  margin-top: 1.5rem;
+  font-size: 0.92rem;
+}
+
+.footer-contact-title {
+  color: var(--color-gold-light);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-bottom: 0.5rem;
+  color: #FAF6EE;
+}
+
+.footer-contact-item a {
+  color: var(--color-gold-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.footer-contact-item a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .social-links {
   display: flex;
+  align-items: center;
   gap: 0.75rem;
   margin-top: 1.25rem;
+  flex-wrap: wrap;
 }
 
 .social-icon-btn {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--color-gold-light);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all var(--transition-fast);
+  text-decoration: none;
 }
 
 .social-icon-btn:hover {
-  background: var(--color-gold-light);
-  border-color: var(--color-gold-light);
-  color: #07110B;
+  background: var(--color-gold);
+  border-color: var(--color-gold);
   transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(233, 168, 37, 0.35);
+}
+
+.social-icon-btn .social-img-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  transition: filter var(--transition-fast);
+}
+
+.social-icon-btn:hover .social-img-icon {
+  filter: brightness(0) saturate(100%);
 }
 
 .annapoorna-footer .social-icon-btn:focus-visible {
@@ -2633,17 +2763,18 @@ textarea.form-control-custom {
 .footer-bottom {
   padding-block: 1.5rem;
   font-family: var(--font-nav);
-  font-size: 0.85rem;
-  color: rgba(250, 246, 238, 0.6);
+  font-size: 0.9rem;
+  color: rgba(250, 246, 238, 0.85);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .footer-bottom a {
-  color: rgba(250, 246, 238, 0.75);
+  color: rgba(250, 246, 238, 0.9);
   text-decoration: none;
   transition: color var(--transition-fast);
 }

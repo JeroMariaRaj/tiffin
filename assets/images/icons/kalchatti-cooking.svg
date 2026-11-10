@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Steaming aroma waves -->
+  <path d="M12 4c0 1.5-1 2.5-1 3.5 M16 2c0 2-1 3-1 4.5 M20 4c0 1.5-1 2.5-1 3.5"/>
+  <!-- Kalchatti Soapstone Pot Rim & Handles -->
+  <rect x="5" y="9" width="22" height="3" rx="1.5"/>
+  <path d="M2 10h3v4H2z M27 10h3v4h-3z"/>
+  <!-- Deep curved soapstone vessel body -->
+  <path d="M6 12v6c0 5 4.5 8 10 8s10-3 10-8v-6"/>
+  <!-- Traditional slow hearth flame underneath -->
+  <path d="M11 29c1.5-2 2-3 2-4s1.5-2 3-2 1.5 1 3 2 1.5 2 2 4" stroke-width="1.8"/>
+</svg>

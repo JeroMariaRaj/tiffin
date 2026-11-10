@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Bilona wooden churning rod -->
+  <line x1="16" y1="2" x2="16" y2="12"/>
+  <path d="M13 5h6 M12 8h8"/>
+  <!-- Pure golden ghee drop -->
+  <path d="M16 11c-1.5 2-2.5 3-2.5 4.5a2.5 2.5 0 0 0 5 0c0-1.5-1-2.5-2.5-4.5z" fill="currentColor"/>
+  <!-- Traditional Clay Handi Pot -->
+  <ellipse cx="16" cy="18" rx="8" ry="2"/>
+  <path d="M8 18c-2 2-3 5-1 8 1.5 2.5 4.5 3 9 3s7.5-.5 9-3c2-3 1-6-1-8"/>
+</svg>

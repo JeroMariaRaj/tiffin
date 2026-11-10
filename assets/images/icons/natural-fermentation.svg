@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Fermentation bubbles rising -->
+  <circle cx="10" cy="5" r="1.5" fill="currentColor"/>
+  <circle cx="16" cy="3" r="1.75"/>
+  <circle cx="21" cy="6" r="1.25" fill="currentColor"/>
+  <!-- Urn Rim & Neck -->
+  <ellipse cx="16" cy="11" rx="7" ry="2"/>
+  <path d="M10 11v2c0 1-1 2-2 3-1.5 1.5-2 4-2 7 0 4 4.5 6 10 6s10-2 10-6c0-3-.5-5.5-2-7-1-1-2-2-2-3v-2"/>
+  <!-- Decorative Heritage Band -->
+  <path d="M7 19c3 1.5 6 1.5 9 0s6-1.5 9 0"/>
+</svg>
